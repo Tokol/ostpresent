@@ -1,0 +1,3358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSTP Presentation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
+    />
+    <link rel="icon" type="image/png" href="novia_uas.png" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <img class="deck-footer-logo" src="novia_uas.png" alt="Novia UAS logo" />
+      <div class="slides">
+        <section class="hero-slide">
+          <div class="hero-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="hero-layout">
+            <div class="hero-topbar">
+              <p class="hero-kicker">Geometric Inspection</p>
+              <img class="hero-corner-logo" src="ostp_logo.png" alt="OSTP logo" />
+            </div>
+            <div class="hero-copy">
+              <h1>
+                <span>Roundness:</span>
+                <span>From Geometry to</span>
+                <span>Industrial Validation</span>
+              </h1>
+              <div class="hero-bottom-row">
+                <div class="hero-subtitle-block">
+                  <p class="hero-subtitle">
+                    Bridging geometric theory with real world inspection.
+                  </p>
+                  <img
+                    class="hero-subtitle-image"
+                    src="images/bg_newplot.png"
+                    alt="Background roundness plot"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual-panel">
+              <div class="hero-visual-frame">
+                <div class="hero-visual-labels">
+                  <span class="hero-chip">Roundness</span>
+                  <span class="hero-chip hero-chip-muted">Standard Validation</span>
+                </div>
+                <img
+                  class="hero-main-image"
+                  src="images/slide1.png"
+                  alt="Industrial pipe cross-sections used for roundness validation"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide reality-section">
+          <div class="themed-backdrop reality-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell circle-slide">
+            <div class="circle-copy">
+              <p class="themed-kicker">Geometric Foundation</p>
+              <h2>Why Circles Matter</h2>
+              <div class="circle-principles">
+                <p>
+                  <strong>Constant radius.</strong>
+                  A circle has a constant radius from its center, enabling
+                  uniform rotation and even stress distribution.
+                </p>
+                <p>
+                  <strong>Maximum area.</strong>
+                  For a given boundary, a circle encloses the maximum area,
+                  making it an efficient and stable design choice.
+                </p>
+              </div>
+            </div>
+            <div class="circle-gallery">
+              <div class="circle-grid" aria-label="Examples of circular forms">
+                <figure>
+                  <img src="images/grid/pizza.jpeg" alt="Pizza" />
+                  <figcaption>Pizza</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/grid/coffe.jpg" alt="Coffee cup" />
+                  <figcaption>Cup</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/grid/manhole.jpeg" alt="Manhole cover" />
+                  <figcaption>Manhole</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/grid/wheel.jpeg" alt="Wheel" />
+                  <figcaption>Wheel</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/grid/industry.jpeg" alt="Industrial circular form" />
+                  <figcaption>Industry</figcaption>
+                </figure>
+                <figure>
+                  <img src="images/grid/pipe.jpg" alt="Pipe cross-section" />
+                  <figcaption>Pipe</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="circle-scale">
+              <p>
+                Circular patterns appear across scales, from microscopic
+                structures to large astronomical systems, though rarely as
+                perfect circles.
+              </p>
+              <div class="scale-bridge" aria-label="Circular patterns across scales">
+                <figure>
+                  <img
+                    src="images/microscopic observation.png"
+                    alt="Microscopic circular structure"
+                  />
+                  <figcaption>Microscopic</figcaption>
+                </figure>
+                <span class="scale-line" aria-hidden="true"></span>
+                <figure>
+                  <img src="images/galaxy.jpeg" alt="Galaxy with circular form" />
+                  <figcaption>Astronomical</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell reality-slide">
+            <div class="reality-copy">
+              <p class="themed-kicker">Roundness Error</p>
+              <h2>Perfect Circle vs Reality</h2>
+              <div class="reality-points">
+                <p>
+                  <strong>Perfect circle.</strong>
+                  A perfect circle is a mathematical ideal with a constant
+                  radius at every point.
+                </p>
+                <p>
+                  <strong>Manufacturing reality.</strong>
+                  In real-world manufacturing, no object is perfectly circular.
+                  Deviations arise from machining, material behavior, and
+                  process variation.
+                </p>
+              </div>
+              <p class="reality-transition">
+                This deviation is what we define and measure as roundness error.
+              </p>
+            </div>
+            <div class="reality-visuals" aria-label="Circular deviation examples">
+              <figure>
+                <img src="images/circular_devate.jpeg" alt="Circular deviation illustration" />
+              </figure>
+            </div>
+            <p class="reality-standard">
+              To evaluate this, standards such as ISO 12181 define methods to
+              compute roundness.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell iso-slide">
+            <div class="iso-copy">
+              <p class="themed-kicker">Evaluation Standard</p>
+              <h2>ISO 12181 Roundness Evaluation Framework</h2>
+              <div class="iso-notes">
+                <p>
+                  <strong>Core idea.</strong>
+                  Roundness is not measured directly. It is evaluated by
+                  comparing measured data to a mathematically defined reference
+                  circle.
+                </p>
+              </div>
+            </div>
+            <div class="iso-tree" aria-label="ISO 12181 evaluation rule tree">
+              <div class="tree-node tree-root">
+                ISO 12181
+                <span>Evaluation Rules</span>
+              </div>
+              <div class="tree-stem"></div>
+              <div class="tree-node">
+                Measured Profile
+                <span>Data</span>
+              </div>
+              <div class="tree-stem"></div>
+              <div class="tree-node">
+                Reference Circle
+                <span>Method Selection</span>
+              </div>
+              <div class="tree-branch" aria-hidden="true"></div>
+              <div class="tree-methods">
+                <div class="tree-method">
+                  <div class="method-code">LSC</div>
+                  <p>Least Squares Circle</p>
+                  <span>best fit</span>
+                </div>
+                <div class="tree-method">
+                  <div class="method-code">MCC</div>
+                  <p>Minimum Circumscribed Circle</p>
+                  <span>outer envelope</span>
+                </div>
+                <div class="tree-method">
+                  <div class="method-code">MIC</div>
+                  <p>Maximum Inscribed Circle</p>
+                  <span>inner envelope</span>
+                </div>
+                <div class="tree-method">
+                  <div class="method-code">MZC</div>
+                  <p>Minimum Zone Circle</p>
+                  <span>minimum zone error</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-slide">
+            <div class="lsc-copy">
+              <p class="themed-kicker">Reference Circle Method</p>
+              <h2>LSC — Least Squares Circle (Best Fit)</h2>
+              <div class="lsc-notes">
+                <p>
+                  <strong>Core idea.</strong>
+                  LSC finds a circle that best fits all measured points by
+                  balancing deviations across the entire shape.
+                </p>
+                <p>
+                  <strong>Analogy.</strong>
+                  Like adjusting a hoop so the overall distance to all points is
+                  minimized, not pulled by extremes.
+                </p>
+              </div>
+              <p class="lsc-takeaway">
+                No single point dominates the shape. The circle represents a
+                balanced fit.
+              </p>
+            </div>
+            <figure class="lsc-visual lsc-visual-static">
+              <img src="images/lsc.png" alt="Least squares circle best-fit illustration" />
+              <figcaption>
+                Best-fit circle balancing deviations from all measured points
+              </figcaption>
+            </figure>
+            <div class="lsc-demo" aria-label="Interactive least squares circle demo">
+              <svg
+                class="lsc-demo-svg"
+                data-prevent-swipe
+                viewBox="0 0 640 430"
+                role="img"
+                aria-label="Draggable measurement points with live best-fit circle"
+              >
+                <defs>
+                  <filter id="lscPointShadow" x="-40%" y="-40%" width="180%" height="180%">
+                    <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#2f211b" flood-opacity="0.18" />
+                  </filter>
+                </defs>
+                <rect class="lsc-demo-panel" x="22" y="22" width="596" height="386" rx="18" />
+                <g class="lsc-demo-grid" aria-hidden="true">
+                  <path d="M82 68H558M82 128H558M82 188H558M82 248H558M82 308H558M82 368H558" />
+                  <path d="M82 68V368M162 68V368M242 68V368M322 68V368M402 68V368M482 68V368M558 68V368" />
+                </g>
+                <g class="lsc-residuals"></g>
+                <circle class="lsc-fit-circle" cx="320" cy="215" r="120" />
+                <g class="lsc-center-marker">
+                  <line x1="308" y1="215" x2="332" y2="215" />
+                  <line x1="320" y1="203" x2="320" y2="227" />
+                  <circle cx="320" cy="215" r="5" />
+                </g>
+                <g class="lsc-points"></g>
+                <g class="lsc-demo-labels">
+                  <text class="lsc-label-center" x="38" y="44">center: --</text>
+                  <text class="lsc-label-radius" x="38" y="386">radius: --</text>
+                  <text class="lsc-label-error" x="602" y="386" text-anchor="end">total error: --</text>
+                  <text class="lsc-label-hint" x="602" y="44" text-anchor="end">drag points</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-formula-slide">
+            <div class="lsc-formula-copy">
+              <p class="themed-kicker">Least Squares Method</p>
+              <h2>How LSC is Computed</h2>
+              <div class="lsc-formula-notes">
+                <p>
+                  For every point, we measure how far it is from the circle.
+                  Then we square those differences and sum them. The best circle
+                  is the one where this total error is smallest.
+                </p>
+              </div>
+              <div class="lsc-equation-block">
+                <p class="lsc-equation">
+                  E = ∑<sup>n</sup><sub>i=1</sub>(d<sub>i</sub> − r)<sup>2</sup>
+                </p>
+              </div>
+              <div class="lsc-terms">
+                <p class="lsc-terms-title">What the terms mean</p>
+                <ul>
+                  <li><code>dᵢ</code> → distance from point to center</li>
+                  <li><code>r</code> → radius of the circle</li>
+                  <li><code>dᵢ − r</code> → deviation from the circle</li>
+                  <li>Squaring ensures all deviations contribute positively</li>
+                </ul>
+              </div>
+            </div>
+            <figure class="lsc-formula-visual lsc-formula-visual-static">
+              <img src="images/lsc_formula.png" alt="Least squares circle formula diagram" />
+              <figcaption>
+                Instead of minimizing raw distances, LSC minimizes the total
+                squared deviation across all points.
+              </figcaption>
+            </figure>
+            <div class="lsc-compute-demo" aria-label="Animated least squares computation demo">
+              <svg
+                class="lsc-compute-svg"
+                viewBox="0 0 660 430"
+                role="img"
+                aria-label="Animated LSC formula showing distance, deviation, squared contribution, and total error"
+              >
+                <rect class="lsc-compute-panel" x="20" y="20" width="620" height="390" rx="18" />
+                <g class="lsc-compute-plot">
+                  <circle class="lsc-compute-fit" cx="214" cy="214" r="114" />
+                  <g class="lsc-compute-residuals"></g>
+                  <line class="lsc-compute-radius" x1="214" y1="214" x2="328" y2="214" />
+                  <line class="lsc-compute-distance" x1="214" y1="214" x2="328" y2="214" />
+                  <g class="lsc-compute-points"></g>
+                  <circle class="lsc-compute-center" cx="214" cy="214" r="6" />
+                  <text class="lsc-compute-center-label" x="226" y="208">center</text>
+                  <text class="lsc-compute-di-label" x="250" y="174">dᵢ</text>
+                  <text class="lsc-compute-dev-label" x="334" y="214">dᵢ − r</text>
+                </g>
+                <g class="lsc-compute-side">
+                  <text class="lsc-compute-title" x="398" y="78">E = Σ(dᵢ − r)²</text>
+                  <text class="lsc-compute-step" x="398" y="122">point i: --</text>
+                  <text class="lsc-compute-di-value" x="398" y="158">dᵢ = --</text>
+                  <text class="lsc-compute-dev-value" x="398" y="194">dᵢ − r = --</text>
+                  <text class="lsc-compute-square-value" x="398" y="230">(dᵢ − r)² = --</text>
+                  <text class="lsc-compute-sum-value" x="398" y="278">running Σ = --</text>
+                  <g class="lsc-error-bars" transform="translate(400 310)"></g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-slide">
+            <div class="lsc-copy">
+              <p class="themed-kicker">Reference Circle Method</p>
+              <h2>MCC — Minimum Circumscribed Circle (Outer Constraint)</h2>
+              <div class="lsc-notes">
+                <p>
+                  <strong>Core idea.</strong>
+                  MCC finds the smallest circle that contains all measured
+                  points.
+                </p>
+                <p>
+                  <strong>Analogy.</strong>
+                  Like stretching a rubber band around a group of nails so it
+                  tightly wraps the outermost ones.
+                </p>
+              </div>
+              <p class="lsc-takeaway">
+                The circle is controlled by the outermost points, not the
+                average.
+              </p>
+            </div>
+            <figure class="lsc-visual mcc-visual-static">
+              <img src="images/mcc.png" alt="Minimum circumscribed circle illustration" />
+              <figcaption>
+                This circle is not balanced like LSC. It is pushed outward until
+                every point is inside.
+              </figcaption>
+            </figure>
+            <div class="mcc-demo" aria-label="Interactive minimum circumscribed circle demo">
+              <svg
+                class="mcc-demo-svg"
+                data-prevent-swipe
+                viewBox="0 0 640 430"
+                role="img"
+                aria-label="Draggable points with live minimum circumscribed circle"
+              >
+                <rect class="mcc-demo-panel" x="22" y="22" width="596" height="386" rx="18" />
+                <g class="mcc-demo-grid" aria-hidden="true">
+                  <path d="M82 68H558M82 128H558M82 188H558M82 248H558M82 308H558M82 368H558" />
+                  <path d="M82 68V368M162 68V368M242 68V368M322 68V368M402 68V368M482 68V368M558 68V368" />
+                </g>
+                <circle class="mcc-boundary-circle" cx="320" cy="215" r="128" />
+                <g class="mcc-control-lines"></g>
+                <g class="mcc-center-marker">
+                  <line x1="308" y1="215" x2="332" y2="215" />
+                  <line x1="320" y1="203" x2="320" y2="227" />
+                  <circle cx="320" cy="215" r="5" />
+                </g>
+                <g class="mcc-points"></g>
+                <g class="mcc-demo-labels">
+                  <text class="mcc-label-boundary" x="38" y="44">outer boundary</text>
+                  <text class="mcc-label-radius" x="38" y="386">radius: --</text>
+                  <text class="mcc-label-controls" x="602" y="386" text-anchor="end">controlling points: --</text>
+                  <text class="mcc-label-hint" x="602" y="44" text-anchor="end">drag points</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-formula-slide">
+            <div class="lsc-formula-copy">
+              <p class="themed-kicker">Minimum Circumscribed Circle</p>
+              <h2>How MCC is Computed</h2>
+              <div class="lsc-formula-notes">
+                <p>
+                  We measure distances from all points, but only the largest one
+                  matters. That point decides how big the circle must be.
+                </p>
+              </div>
+              <div class="lsc-equation-block">
+                <p class="lsc-equation">
+                  r = max<sub>i</sub>(d<sub>i</sub>)
+                </p>
+              </div>
+              <div class="lsc-terms">
+                <p class="lsc-terms-title">What the terms mean</p>
+                <ul>
+                  <li><code>dᵢ</code> → distance from point to center</li>
+                  <li><code>r</code> → radius of enclosing circle</li>
+                  <li>The farthest point defines the circle</li>
+                </ul>
+              </div>
+            </div>
+            <figure class="lsc-formula-visual mcc-formula-visual-static">
+              <img src="images/mcc_formula.png" alt="Minimum circumscribed circle computation diagram" />
+              <figcaption>
+                MCC sets the radius equal to the maximum distance from the
+                center.
+              </figcaption>
+            </figure>
+            <div class="mcc-compute-demo" aria-label="Animated MCC maximum distance computation">
+              <svg
+                class="mcc-compute-svg"
+                viewBox="0 0 660 430"
+                role="img"
+                aria-label="Animated MCC formula showing the farthest point defining the radius"
+              >
+                <rect class="mcc-compute-panel" x="20" y="20" width="620" height="390" rx="18" />
+                <g class="mcc-compute-plot">
+                  <circle class="mcc-compute-boundary" cx="214" cy="214" r="126" />
+                  <g class="mcc-compute-distance-lines"></g>
+                  <g class="mcc-compute-points"></g>
+                  <circle class="mcc-compute-center" cx="214" cy="214" r="6" />
+                  <text class="mcc-compute-center-label" x="226" y="208">center</text>
+                  <text class="mcc-compute-radius-label" x="292" y="138">r = largest dᵢ</text>
+                </g>
+                <g class="mcc-compute-side">
+                  <text class="mcc-compute-title" x="398" y="78">r = maxᵢ(dᵢ)</text>
+                  <text class="mcc-compute-step" x="398" y="122">checking: --</text>
+                  <text class="mcc-compute-distance-value" x="398" y="164">dᵢ = --</text>
+                  <text class="mcc-compute-max-value" x="398" y="206">current max = --</text>
+                  <text class="mcc-compute-result" x="398" y="262">radius = farthest point</text>
+                  <g class="mcc-distance-bars" transform="translate(400 304)"></g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-slide">
+            <div class="lsc-copy">
+              <p class="themed-kicker">Reference Circle Method</p>
+              <h2>MIC — Maximum Inscribed Circle (Inner Constraint)</h2>
+              <div class="lsc-notes">
+                <p>
+                  <strong>Core idea.</strong>
+                  MIC finds the largest possible circle that fits completely
+                  inside all measured points.
+                </p>
+                <p>
+                  <strong>Analogy.</strong>
+                  Like placing the largest possible coin inside an irregular
+                  hole without crossing its boundary.
+                </p>
+              </div>
+              <p class="lsc-takeaway">
+                The circle is controlled by the innermost points, not the outer
+                shape.
+              </p>
+            </div>
+            <figure class="lsc-visual mic-visual-static">
+              <img src="images/mic.png" alt="Maximum inscribed circle illustration" />
+              <figcaption>
+                This circle grows from inside until it touches the inner
+                boundary. It cannot cross any point
+              </figcaption>
+            </figure>
+            <div class="mic-demo" aria-label="Interactive maximum inscribed circle demo">
+              <svg
+                class="mic-demo-svg"
+                data-prevent-swipe
+                viewBox="0 0 640 430"
+                role="img"
+                aria-label="Draggable boundary points with live maximum inscribed circle"
+              >
+                <rect class="mic-demo-panel" x="22" y="22" width="596" height="386" rx="18" />
+                <g class="mic-demo-grid" aria-hidden="true">
+                  <path d="M82 68H558M82 128H558M82 188H558M82 248H558M82 308H558M82 368H558" />
+                  <path d="M82 68V368M162 68V368M242 68V368M322 68V368M402 68V368M482 68V368M558 68V368" />
+                </g>
+                <path class="mic-profile" d="" />
+                <circle class="mic-inner-circle" cx="320" cy="215" r="108" />
+                <g class="mic-limit-lines"></g>
+                <g class="mic-center-marker">
+                  <line x1="308" y1="215" x2="332" y2="215" />
+                  <line x1="320" y1="203" x2="320" y2="227" />
+                  <circle cx="320" cy="215" r="5" />
+                </g>
+                <g class="mic-points"></g>
+                <g class="mic-demo-labels">
+                  <text class="mic-label-boundary" x="38" y="44">inner boundary</text>
+                  <text class="mic-label-radius" x="38" y="386">radius: --</text>
+                  <text class="mic-label-controls" x="602" y="386" text-anchor="end">controlling point: --</text>
+                  <text class="mic-label-hint" x="602" y="44" text-anchor="end">drag points</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-formula-slide">
+            <div class="lsc-formula-copy">
+              <p class="themed-kicker">Maximum Inscribed Circle</p>
+              <h2>How MIC is Computed</h2>
+              <div class="lsc-formula-notes">
+                <p>
+                  We measure all distances, but the smallest one limits the
+                  circle. That point decides how big the circle can be
+                </p>
+              </div>
+              <div class="lsc-equation-block">
+                <p class="lsc-equation">
+                  r = min<sub>i</sub>(d<sub>i</sub>)
+                </p>
+              </div>
+              <div class="lsc-terms">
+                <p class="lsc-terms-title">What the terms mean</p>
+                <ul>
+                  <li><code>dᵢ</code> → distance from point to center</li>
+                  <li><code>r</code> → radius of inscribed circle</li>
+                  <li>The nearest point limits the size</li>
+                </ul>
+              </div>
+            </div>
+            <figure class="lsc-formula-visual mic-formula-visual-static">
+              <img src="images/mic_formula.png" alt="Maximum inscribed circle computation diagram" />
+              <figcaption>
+                MIC is controlled by the closest point, not the average.
+              </figcaption>
+            </figure>
+            <div class="mic-compute-demo" aria-label="Animated MIC minimum distance computation">
+              <svg
+                class="mic-compute-svg"
+                viewBox="0 0 660 430"
+                role="img"
+                aria-label="Animated MIC formula showing the nearest point limiting the radius"
+              >
+                <rect class="mic-compute-panel" x="20" y="20" width="620" height="390" rx="18" />
+                <g class="mic-compute-plot">
+                  <circle class="mic-compute-boundary" cx="214" cy="214" r="112" />
+                  <g class="mic-compute-distance-lines"></g>
+                  <g class="mic-compute-points"></g>
+                  <circle class="mic-compute-center" cx="214" cy="214" r="6" />
+                  <text class="mic-compute-center-label" x="226" y="208">center</text>
+                  <text class="mic-compute-radius-label" x="282" y="150">r = nearest dᵢ</text>
+                </g>
+                <g class="mic-compute-side">
+                  <text class="mic-compute-title" x="398" y="78">r = minᵢ(dᵢ)</text>
+                  <text class="mic-compute-step" x="398" y="122">checking: --</text>
+                  <text class="mic-compute-distance-value" x="398" y="164">dᵢ = --</text>
+                  <text class="mic-compute-min-value" x="398" y="206">current min = --</text>
+                  <text class="mic-compute-result" x="398" y="262">radius = nearest point</text>
+                  <g class="mic-distance-bars" transform="translate(400 304)"></g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-slide">
+            <div class="lsc-copy">
+              <p class="themed-kicker">Reference Circle Method</p>
+              <h2>MZC — Minimum Zone Circle (True Roundness Error)</h2>
+              <div class="lsc-notes">
+                <p>
+                  <strong>Core idea.</strong>
+                  MZC finds two concentric circles such that all measured
+                  points lie between them, and the gap between the circles is as
+                  small as possible.
+                </p>
+                <p>
+                  <strong>Analogy.</strong>
+                  Like placing points inside a thin ring and adjusting the ring
+                  until it becomes as tight as possible around all points.
+                </p>
+              </div>
+              <p class="lsc-takeaway">
+                Roundness is defined by the smallest possible radial zone that
+                contains all points.
+              </p>
+            </div>
+            <figure class="lsc-visual mzc-visual-static">
+              <img src="images/mzc.png" alt="Minimum zone circle illustration" />
+              <figcaption>
+                Instead of one circle, we use two. We shrink the gap between
+                them until all points just fit inside.
+              </figcaption>
+            </figure>
+            <div class="mzc-demo" aria-label="Interactive minimum zone circle demo">
+              <svg
+                class="mzc-demo-svg"
+                data-prevent-swipe
+                viewBox="0 0 640 430"
+                role="img"
+                aria-label="Draggable points with live minimum zone inner and outer circles"
+              >
+                <rect class="mzc-demo-panel" x="22" y="22" width="596" height="386" rx="18" />
+                <g class="mzc-demo-grid" aria-hidden="true">
+                  <path d="M82 68H558M82 128H558M82 188H558M82 248H558M82 308H558M82 368H558" />
+                  <path d="M82 68V368M162 68V368M242 68V368M322 68V368M402 68V368M482 68V368M558 68V368" />
+                </g>
+                <circle class="mzc-outer-circle" cx="320" cy="215" r="134" />
+                <circle class="mzc-inner-circle" cx="320" cy="215" r="104" />
+                <g class="mzc-control-lines"></g>
+                <g class="mzc-center-marker">
+                  <line x1="308" y1="215" x2="332" y2="215" />
+                  <line x1="320" y1="203" x2="320" y2="227" />
+                  <circle cx="320" cy="215" r="5" />
+                </g>
+                <g class="mzc-points"></g>
+                <g class="mzc-demo-labels">
+                  <text class="mzc-label-zone" x="38" y="44">minimum zone</text>
+                  <text class="mzc-label-radii" x="38" y="386">rmax: --  rmin: --</text>
+                  <text class="mzc-label-error" x="602" y="386" text-anchor="end">error: --</text>
+                  <text class="mzc-label-hint" x="602" y="44" text-anchor="end">drag points</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lsc-formula-slide">
+            <div class="lsc-formula-copy">
+              <p class="themed-kicker">Minimum Zone Circle</p>
+              <h2>How Roundness Error is Computed (MZC)</h2>
+              <div class="lsc-formula-notes">
+                <p>
+                  We look for two circles with the same center. The difference
+                  between their radii is the roundness error.
+                </p>
+              </div>
+              <div class="lsc-equation-block">
+                <p class="lsc-equation">
+                  E = r<sub>max</sub> − r<sub>min</sub>
+                </p>
+              </div>
+              <div class="lsc-terms">
+                <p class="lsc-terms-title">What the terms mean</p>
+                <ul>
+                  <li><code>r<sub>max</sub></code> → radius of outer circle (farthest point)</li>
+                  <li><code>r<sub>min</sub></code> → radius of inner circle (nearest point)</li>
+                  <li><code>E</code> → roundness error (zone thickness)</li>
+                </ul>
+              </div>
+            </div>
+            <figure class="lsc-formula-visual mzc-formula-visual-static">
+              <img src="images/mzc_formula.png" alt="Minimum zone circle formula diagram" />
+              <figcaption>
+                Roundness error is the minimum possible gap between two
+                concentric circles enclosing all points.
+              </figcaption>
+            </figure>
+            <div class="mzc-compute-demo" aria-label="Animated MZC roundness error computation">
+              <svg
+                class="mzc-compute-svg"
+                viewBox="0 0 660 430"
+                role="img"
+                aria-label="Animated MZC formula showing r max minus r min as zone thickness"
+              >
+                <rect class="mzc-compute-panel" x="20" y="20" width="620" height="390" rx="18" />
+                <g class="mzc-compute-plot">
+                  <circle class="mzc-compute-outer" cx="214" cy="214" r="132" />
+                  <circle class="mzc-compute-inner" cx="214" cy="214" r="102" />
+                  <g class="mzc-compute-lines"></g>
+                  <g class="mzc-compute-points"></g>
+                  <path class="mzc-zone-bracket" d="M360 82h18M369 82v30M360 112h18" />
+                  <text class="mzc-zone-label" x="386" y="102">E</text>
+                  <circle class="mzc-compute-center" cx="214" cy="214" r="6" />
+                  <text class="mzc-compute-center-label" x="226" y="208">center</text>
+                </g>
+                <g class="mzc-compute-side">
+                  <text class="mzc-compute-title" x="398" y="78">E = rmax − rmin</text>
+                  <text class="mzc-compute-rmax" x="398" y="132">rmax = --</text>
+                  <text class="mzc-compute-rmin" x="398" y="174">rmin = --</text>
+                  <text class="mzc-compute-error" x="398" y="226">E = --</text>
+                  <text class="mzc-compute-result" x="398" y="282">zone thickness</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell deviation-slide">
+            <div class="deviation-copy">
+              <p class="themed-kicker">Measurement Pipeline</p>
+              <h2>From Real Shape to Measured Deviation</h2>
+              <ul class="deviation-points">
+                <li>Real pipe is not perfectly circular</li>
+                <li>Shape is converted into radial deviation</li>
+                <li>Deviation varies with angle</li>
+              </ul>
+            </div>
+            <div class="deviation-visuals">
+              <figure class="deviation-visual-card">
+                <p class="deviation-label">Vision Output</p>
+                <img src="images/circle_slide.jpg" alt="Detected pipe rim from vision system" />
+                <figcaption>Detected pipe rim from vision system</figcaption>
+              </figure>
+              <span class="deviation-flow" aria-hidden="true">→</span>
+              <figure class="deviation-visual-card deviation-visual-card-plain">
+                <p class="deviation-label">Deviation Map</p>
+                <img
+                  src="images/bg_newplot.png"
+                  alt="Radial deviation from ideal circle across 360 degrees"
+                />
+                <figcaption>Radial deviation from ideal circle across 360°</figcaption>
+              </figure>
+            </div>
+            <p class="deviation-takeaway">
+              Visually circular does not mean geometrically perfect.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell circle-fitting-slide">
+            <div class="circle-fitting-header">
+              <p class="themed-kicker">Circle Fitting on Real Data</p>
+            </div>
+
+            <div class="circle-fitting-grid" aria-label="Circle fitting methods">
+              <figure class="circle-fitting-card">
+                <div class="circle-fitting-media">
+                  <img
+                    class="circle-fitting-image circle-fitting-image-lsc"
+                    src="images/slide9/cropped/lsc_point_crop.png"
+                    alt="LSC best-fit average circle"
+                  />
+                  <figcaption class="circle-fitting-chip">LSC • Best fit</figcaption>
+                </div>
+              </figure>
+
+              <figure class="circle-fitting-card">
+                <div class="circle-fitting-media">
+                  <img
+                    class="circle-fitting-image circle-fitting-image-mzc"
+                    src="images/slide9/cropped/mzc_point_crop.png"
+                    alt="MZC minimum zone circle"
+                  />
+                  <figcaption class="circle-fitting-chip">MZC • Minimum zone</figcaption>
+                </div>
+              </figure>
+
+              <figure class="circle-fitting-card">
+                <div class="circle-fitting-media">
+                  <img
+                    class="circle-fitting-image circle-fitting-image-mcc"
+                    src="images/slide9/cropped/mcc_point_crop.png"
+                    alt="MCC outer bound circle"
+                  />
+                  <figcaption class="circle-fitting-chip">MCC • Outer bound</figcaption>
+                </div>
+              </figure>
+
+              <figure class="circle-fitting-card">
+                <div class="circle-fitting-media">
+                  <img
+                    class="circle-fitting-image circle-fitting-image-mic"
+                    src="images/slide9/cropped/mic_point_crop.png"
+                    alt="MIC inner bound circle"
+                  />
+                  <figcaption class="circle-fitting-chip">MIC • Inner bound</figcaption>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell calibration-slide">
+            <div class="calibration-title">
+              <p class="themed-kicker">Measurement Calibration</p>
+            </div>
+
+            <div class="calibration-visual">
+              <figure class="calibration-image-card calibration-image-card-main">
+                <img
+                  src="images/slide_10_1.png"
+                  alt="Scale to millimeters calibration interface"
+                />
+              </figure>
+              <figure class="calibration-image-card">
+                <img
+                  src="images/slide10_2.png"
+                  alt="Measured method values after calibration"
+                />
+              </figure>
+              <p class="calibration-caption">
+                Known diameter → pixel scale
+              </p>
+            </div>
+
+            <div class="calibration-points">
+              <div class="calibration-formula">
+                <p class="calibration-formula-label">Scale Factor</p>
+                <p class="calibration-equation">
+                  mm per pixel =
+                  <span>D<sub>real</sub></span>
+                  <span class="calibration-divider">/</span>
+                  <span>D<sub>pixel</sub></span>
+                </p>
+              </div>
+
+              <div class="calibration-mini-grid">
+                <p><strong>Reference</strong><span>known diameter</span></p>
+                <p><strong>Pixels</strong><span>detected diameter</span></p>
+                <p><strong>Scale</strong><span>mm per px</span></p>
+              </div>
+
+              <p class="calibration-note">
+                Reuse calibration only when camera distance, zoom, angle, and pipe
+                face plane stay fixed.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell ovality-derivation-slide">
+            <style>
+              .ovality-derivation-slide {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                padding-top: 18px;
+                padding-bottom: 12px;
+              }
+              .od-header {
+                display: flex;
+                align-items: baseline;
+                gap: 16px;
+              }
+              .od-header .themed-kicker {
+                margin: 0;
+                flex: 0 0 auto;
+              }
+              .od-header h2 {
+                margin: 0;
+                font-size: clamp(1.34rem, 1.65vw, 1.82rem);
+                line-height: 1.05;
+                max-width: none;
+              }
+              .od-board {
+                display: grid;
+                grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+                gap: 18px;
+                padding: 18px;
+                border-radius: 18px;
+                background:
+                  linear-gradient(180deg, rgba(255, 253, 250, 0.92), rgba(247, 241, 235, 0.86));
+                border: 1px solid rgba(221, 210, 200, 0.9);
+                box-shadow:
+                  0 12px 26px rgba(48, 37, 29, 0.06),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.8);
+              }
+              .od-equation-panel {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 14px;
+              }
+              .od-equation-card {
+                border-radius: 14px;
+                padding: 22px 18px;
+                background: rgba(255, 249, 245, 0.94);
+                border: 1px solid rgba(177, 42, 36, 0.18);
+                text-align: center;
+                box-shadow: 0 9px 20px rgba(48, 37, 29, 0.045);
+              }
+              .od-formula-label {
+                margin: 0 0 8px;
+                color: var(--accent);
+                font-size: 0.58rem;
+                font-weight: 950;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+              }
+              .od-formula {
+                margin: 0;
+                color: var(--accent);
+                font-size: 1.9rem;
+                font-weight: 900;
+                line-height: 1.06;
+              }
+              .od-diameter-pair {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+              }
+              .od-diameter-card {
+                min-height: 94px;
+                padding: 14px 12px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.82);
+                border: 1px solid rgba(214, 204, 194, 0.9);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+              }
+              .od-diameter-card strong {
+                color: #2f3340;
+                font-size: 0.76rem;
+                line-height: 1.1;
+              }
+              .od-diameter-card span {
+                margin-top: 6px;
+                color: var(--muted);
+                font-size: 0.52rem;
+                font-weight: 700;
+              }
+              .od-diameter-card.max {
+                border-color: rgba(177, 42, 36, 0.22);
+                background: rgba(255, 244, 241, 0.86);
+              }
+              .od-diameter-card.min {
+                border-color: rgba(28, 126, 68, 0.24);
+                background: rgba(242, 251, 246, 0.9);
+              }
+              .od-steps {
+                display: grid;
+                grid-template-columns: 1fr auto 1fr auto 1fr;
+                gap: 8px;
+                align-items: stretch;
+              }
+              .od-step {
+                min-height: 72px;
+                padding: 10px;
+                border-radius: 8px;
+                background: rgba(255, 253, 250, 0.9);
+                border: 1px solid rgba(214, 204, 194, 0.86);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 4px;
+              }
+              .od-step span {
+                color: var(--accent);
+                font-size: 0.54rem;
+                font-weight: 950;
+                letter-spacing: 0.08em;
+              }
+              .od-step strong {
+                color: #2f3340;
+                font-size: 0.62rem;
+                line-height: 1.12;
+              }
+              .od-step-arrow {
+                display: flex;
+                align-items: center;
+                color: rgba(177, 42, 36, 0.45);
+                font-size: 0.86rem;
+                font-weight: 900;
+              }
+              .od-visual-panel {
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+              }
+              .od-visual-frame {
+                position: relative;
+                overflow: hidden;
+                border-radius: 14px;
+                background: #fdfdfc;
+                border: 1px solid rgba(223, 214, 206, 0.9);
+                box-shadow: 0 9px 20px rgba(48, 37, 29, 0.045);
+                min-height: 184px;
+                display: flex;
+                align-items: center;
+              }
+              .od-visual-frame img {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-height: 180px;
+                object-fit: contain;
+                padding: 14px;
+                box-sizing: border-box;
+              }
+              .od-visual-chip {
+                position: absolute;
+                left: 14px;
+                top: 14px;
+                padding: 6px 11px;
+                border-radius: 999px;
+                background: rgba(255, 250, 246, 0.94);
+                border: 1px solid rgba(177, 42, 36, 0.16);
+                color: var(--accent);
+                font-size: 0.52rem;
+                font-weight: 950;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+              }
+              .od-rule-strip {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+              }
+              .od-rule-strip span {
+                min-height: 52px;
+                border-radius: 8px;
+                background: rgba(255, 253, 250, 0.9);
+                border: 1px solid rgba(214, 204, 194, 0.86);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: #4b4540;
+                font-size: 0.56rem;
+                font-weight: 800;
+                line-height: 1.16;
+              }
+            </style>
+
+            <div class="od-header">
+              <p class="themed-kicker">Ovality Computation</p>
+              <h2>D<sub>max</sub> minus D<sub>min</sub></h2>
+            </div>
+
+            <div class="od-board">
+              <div class="od-equation-panel">
+                <div class="od-equation-card">
+                  <p class="od-formula-label">OSTP Ovality</p>
+                  <p class="od-formula">D<sub>max</sub> - D<sub>min</sub></p>
+                </div>
+
+                <div class="od-diameter-pair">
+                  <div class="od-diameter-card max">
+                    <strong>D<sub>max</sub></strong>
+                    <span>largest measured diameter</span>
+                  </div>
+                  <div class="od-diameter-card min">
+                    <strong>D<sub>min</sub></strong>
+                    <span>smallest measured diameter</span>
+                  </div>
+                </div>
+
+                <div class="od-steps" aria-label="Ovality computation steps">
+                  <div class="od-step">
+                    <span>01</span>
+                    <strong>Detect wall edges</strong>
+                  </div>
+                  <div class="od-step-arrow" aria-hidden="true">→</div>
+                  <div class="od-step">
+                    <span>02</span>
+                    <strong>Measure diameters</strong>
+                  </div>
+                  <div class="od-step-arrow" aria-hidden="true">→</div>
+                  <div class="od-step">
+                    <span>03</span>
+                    <strong>Compare range</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="od-visual-panel">
+                <figure class="od-visual-frame">
+                  <span class="od-visual-chip">Measured profile</span>
+                  <img src="images/wall_derivation.png" alt="Wall contour with maximum and minimum diameter measurements" />
+                </figure>
+                <div class="od-rule-strip">
+                  <span>same fitted center</span>
+                  <span>all angular positions</span>
+                  <span>millimeter output</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell fc-slide">
+            <style>
+              .fc-slide {
+                padding-top: 14px;
+                padding-bottom: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+              }
+              .fc-header {
+                display: flex;
+                align-items: baseline;
+                gap: 16px;
+              }
+              .fc-header .themed-kicker {
+                margin: 0;
+                flex: 0 0 auto;
+              }
+              .fc-header h2 {
+                margin: 0;
+                font-size: clamp(1.34rem, 1.65vw, 1.82rem);
+                line-height: 1.06;
+                max-width: none;
+              }
+              .fc-system {
+                position: relative;
+                border-radius: 18px;
+                padding: 18px 18px 16px;
+                background:
+                  linear-gradient(180deg, rgba(255, 253, 250, 0.9), rgba(247, 241, 235, 0.86));
+                border: 1px solid rgba(221, 210, 200, 0.9);
+                box-shadow:
+                  0 12px 26px rgba(48, 37, 29, 0.06),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.8);
+              }
+              .fc-pipeline {
+                display: grid;
+                grid-template-columns: repeat(6, minmax(0, 1fr));
+                gap: 16px;
+                align-items: stretch;
+              }
+              .fc-stage {
+                position: relative;
+                min-height: 84px;
+                padding: 13px 10px 12px;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.78);
+                border: 1px solid rgba(214, 204, 194, 0.95);
+                box-shadow: 0 6px 16px rgba(50, 39, 31, 0.045);
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+              }
+              .fc-stage::after {
+                content: "";
+                position: absolute;
+                right: -13px;
+                top: 50%;
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid rgba(177, 42, 36, 0.42);
+                border-right: 2px solid rgba(177, 42, 36, 0.42);
+                transform: translateY(-50%) rotate(45deg);
+              }
+              .fc-stage:last-child::after {
+                display: none;
+              }
+              .fc-stage-num {
+                width: 22px;
+                height: 22px;
+                margin: 0 auto 1px;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(177, 42, 36, 0.1);
+                color: var(--accent);
+                font-size: 0.58rem;
+                font-weight: 950;
+              }
+              .fc-stage strong {
+                color: #2f3340;
+                font-size: 0.66rem;
+                line-height: 1.08;
+              }
+              .fc-stage span:last-child {
+                color: #6b6560;
+                font-size: 0.5rem;
+                line-height: 1.18;
+              }
+              .fc-stage.input { border-color: rgba(31, 111, 235, 0.22); background: #f5f8ff; }
+              .fc-stage.find { border-color: rgba(217, 119, 6, 0.24); background: #fff9ef; }
+              .fc-stage.measure { border-color: rgba(28, 126, 68, 0.24); background: #f3fbf6; }
+              .fc-split {
+                width: min(560px, 70%);
+                height: 34px;
+                margin: 0 auto;
+                position: relative;
+              }
+              .fc-split::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 0;
+                width: 2px;
+                height: 18px;
+                background: rgba(177, 42, 36, 0.3);
+              }
+              .fc-split::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 17px;
+                height: 2px;
+                background: rgba(177, 42, 36, 0.3);
+              }
+              .fc-analysis {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 18px;
+                align-items: stretch;
+              }
+              .fc-metric {
+                position: relative;
+                padding: 14px 16px;
+                border-radius: 10px;
+                background: rgba(255, 253, 250, 0.9);
+                border: 1px solid rgba(214, 204, 194, 0.92);
+                box-shadow: 0 8px 18px rgba(48, 37, 29, 0.04);
+              }
+              .fc-metric::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: -18px;
+                width: 2px;
+                height: 18px;
+                background: rgba(177, 42, 36, 0.3);
+              }
+              .fc-metric h3 {
+                margin: 0 0 9px;
+                color: #2f3340;
+                font-size: 0.82rem;
+                line-height: 1.12;
+                letter-spacing: 0;
+              }
+              .fc-methods {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+              }
+              .fc-method {
+                min-height: 72px;
+                padding: 10px 10px 9px;
+                border-radius: 8px;
+                background: rgba(250, 247, 244, 0.9);
+                border: 1px solid rgba(221, 211, 202, 0.82);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+              }
+              .fc-method.primary {
+                background: #f2fbf6;
+                border-color: rgba(28, 126, 68, 0.25);
+              }
+              .fc-method-code {
+                color: var(--accent);
+                font-size: 0.8rem;
+                font-weight: 950;
+                line-height: 1;
+              }
+              .fc-method.primary .fc-method-code {
+                color: #1c7e44;
+              }
+              .fc-method p {
+                margin: 5px 0 0;
+                color: #625c57;
+                font-size: 0.52rem;
+                line-height: 1.18;
+              }
+              .fc-join {
+                width: min(520px, 64%);
+                height: 26px;
+                margin: 0 auto;
+                position: relative;
+              }
+              .fc-join::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 2px;
+                background: rgba(177, 42, 36, 0.3);
+              }
+              .fc-join::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 0;
+                width: 2px;
+                height: 26px;
+                background: rgba(177, 42, 36, 0.3);
+              }
+              .fc-validation {
+                display: grid;
+                grid-template-columns: 1.2fr auto 0.8fr;
+                gap: 14px;
+                align-items: stretch;
+              }
+              .fc-validation-arrow {
+                width: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgba(177, 42, 36, 0.48);
+                font-size: 0.92rem;
+                font-weight: 900;
+              }
+              .fc-check,
+              .fc-result {
+                border-radius: 10px;
+                border: 1px solid rgba(177, 42, 36, 0.18);
+                background: rgba(255, 249, 245, 0.92);
+                padding: 14px 16px;
+                display: flex;
+                align-items: center;
+                gap: 14px;
+              }
+              .fc-check h3,
+              .fc-result h3 {
+                margin: 0 0 4px;
+                color: #2f3340;
+                font-size: 0.78rem;
+                letter-spacing: 0;
+                line-height: 1.1;
+              }
+              .fc-check p {
+                margin: 0;
+                color: #6b6560;
+                font-size: 0.54rem;
+                line-height: 1.22;
+              }
+              .fc-badge {
+                flex: 0 0 auto;
+                min-width: 44px;
+                height: 30px;
+                border-radius: 999px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.56rem;
+                font-weight: 950;
+                letter-spacing: 0.06em;
+              }
+              .fc-badge.standard {
+                color: var(--accent);
+                background: rgba(177, 42, 36, 0.11);
+              }
+              .fc-result {
+                justify-content: space-between;
+                background: linear-gradient(90deg, rgba(242, 251, 246, 0.96), rgba(255, 244, 241, 0.9));
+              }
+              .fc-passfail {
+                display: flex;
+                gap: 8px;
+              }
+              .fc-badge.pass { color: #1c7e44; background: rgba(28, 126, 68, 0.14); }
+              .fc-badge.fail { color: var(--accent); background: rgba(177, 42, 36, 0.13); }
+            </style>
+
+            <div class="fc-header">
+              <p class="themed-kicker">Processing Pipeline</p>
+              <h2>From Image Upload to Standards Validation</h2>
+
+            </div>
+
+            <div class="fc-system" aria-label="Processing pipeline flow chart">
+              <div class="fc-pipeline">
+                <div class="fc-stage input">
+                  <span class="fc-stage-num">1</span>
+                  <strong>Upload</strong>
+                  <span>Image input</span>
+                </div>
+                <div class="fc-stage">
+                  <span class="fc-stage-num">2</span>
+                  <strong>Prepare</strong>
+                  <span>Clean edges</span>
+                </div>
+                <div class="fc-stage find">
+                  <span class="fc-stage-num">3</span>
+                  <strong>Locate Pipe</strong>
+                  <span>ROI + contour</span>
+                </div>
+                <div class="fc-stage">
+                  <span class="fc-stage-num">4</span>
+                  <strong>Fit Circle</strong>
+                  <span>Reference center</span>
+                </div>
+                <div class="fc-stage measure">
+                  <span class="fc-stage-num">5</span>
+                  <strong>Calibrate</strong>
+                  <span>Pixels to mm</span>
+                </div>
+                <div class="fc-stage">
+                  <span class="fc-stage-num">6</span>
+                  <strong>Measure</strong>
+                  <span>Inner / outer wall</span>
+                </div>
+              </div>
+
+              <div class="fc-split" aria-hidden="true"></div>
+
+              <div class="fc-analysis">
+                <div class="fc-metric">
+                  <h3>Diameter Output</h3>
+                  <div class="fc-methods">
+                    <div class="fc-method primary">
+                      <span class="fc-method-code">LSC</span>
+                      <p>Best-fit diameter</p>
+                    </div>
+                    <div class="fc-method">
+                      <span class="fc-method-code">MCC / MIC</span>
+                      <p>Envelope reference</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="fc-metric">
+                  <h3>Roundness Output</h3>
+                  <div class="fc-methods">
+                    <div class="fc-method primary">
+                      <span class="fc-method-code">D<sub>max</sub> - D<sub>min</sub></span>
+                      <p>OSTP ovality range</p>
+                    </div>
+                    <div class="fc-method">
+                      <span class="fc-method-code">MZC</span>
+                      <p>ISO 12181 comparison</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fc-join" aria-hidden="true"></div>
+
+              <div class="fc-validation">
+                <div class="fc-check">
+                  <span class="fc-badge standard">7</span>
+                  <div>
+                    <h3>OSTP Standards Check</h3>
+                    <p>Nominal diameter, tolerance class, and measured values are evaluated together.</p>
+                  </div>
+                </div>
+                <div class="fc-validation-arrow" aria-hidden="true">→</div>
+                <div class="fc-result">
+                  <h3>Validation Result</h3>
+                  <div class="fc-passfail">
+                    <span class="fc-badge pass">PASS</span>
+                    <span class="fc-badge fail">FAIL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell standards-intro-slide">
+            <div class="standards-intro-title">
+              <p class="themed-kicker">Engineering Validation</p>
+              <div class="standards-title-row">
+                <h2>From Measurement to Validation: Integrating OSTP Standards</h2>
+                <img src="ostp_logo.png" alt="OSTP logo" />
+              </div>
+            </div>
+
+            <div class="standards-output">
+              <p class="standards-panel-label">Computed Measurement Output</p>
+              <div class="standards-metric-list">
+                <span>Diameter (mm)</span>
+                 <span>LSC (mm)</span>
+                <span>MZC roundness error</span>
+                <span>MCC outer diameter</span>
+                <span>MIC inner clearance</span>
+              </div>
+              <p class="standards-panel-note">
+                Accurate geometry, but not yet pass/fail.
+              </p>
+            </div>
+
+            <div class="standards-flow" aria-label="Validation flow">
+              <div class="standards-flow-step">Circle fitting</div>
+              <div class="standards-flow-step">Pixel measurement</div>
+              <div class="standards-flow-step">Calibration to mm</div>
+              <div class="standards-flow-step">Computed values</div>
+              <div class="standards-flow-step standards-flow-final">
+                OSTP standard check
+              </div>
+            </div>
+
+            <div class="standards-input">
+              <p class="standards-panel-label">OSTP Standards Integration</p>
+              <div class="standards-source-card">
+                <span>Source</span>
+                <strong>Excel-based engineering sheets</strong>
+              </div>
+              <div class="standards-rule-list">
+                <span>Formula rules</span>
+                <span>Lookup tables</span>
+                <span>Conditional ranges</span>
+                <span>Revision-aware data</span>
+              </div>
+              <p class="standards-panel-note">
+                Standards define the allowed limits.
+              </p>
+            </div>
+
+            <p class="standards-intro-takeaway">
+              Measurement extracts values, afterward OSTP standards decide acceptability.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell standard-mapping-slide">
+            <div class="standard-mapping-title">
+              <p class="themed-kicker">Standard Mapping</p>
+              <h2>Standard Mapping and Reusability</h2>
+              <p>From provided OSTP sheets to reusable validation contracts</p>
+            </div>
+
+            <div class="mapping-panel mapping-panel-raw">
+              <p class="mapping-panel-label">Provided OSTP Data</p>
+              <div class="mapping-doc-card mapping-excel-card">
+                <div class="mapping-doc-top">
+                  <span>.xlsx</span>
+                  <strong>TOLERANSTABELL</strong>
+                </div>
+                <div class="mapping-sheet-grid" aria-hidden="true">
+                  <span>Sheet</span><span>Rule</span><span>Range</span>
+                  <span>1</span><span>D2 ±%</span><span>OT100</span>
+                  <span>2</span><span>lookup</span><span>355–508</span>
+                  <span>3</span><span>NPS rows</span><span>ANSI</span>
+                  <span>8</span><span>tee dims</span><span>60–406</span>
+                  <span>10</span><span>hybrid</span><span>219–610</span>
+                </div>
+              </div>
+              <div class="mapping-mini-notes">
+                <span>formula rules</span>
+                <span>lookup rows</span>
+                <span>conditional ranges</span>
+              </div>
+              <p class="mapping-panel-note">Provided as engineering sheets for human review.</p>
+            </div>
+
+            <div class="mapping-transform" aria-label="Excel to JSON transformation">
+              <span>Parse</span>
+              <span>Clean</span>
+              <span>Structure</span>
+            </div>
+
+            <div class="mapping-panel mapping-panel-contract">
+              <p class="mapping-panel-label">Reusable Validation Contract</p>
+              <div class="mapping-json-stack">
+                <div class="mapping-doc-card mapping-json-card">
+                  <div class="mapping-doc-top">
+                    <span>.json</span>
+                    <strong>standards</strong>
+                  </div>
+                  <pre>{
+  "mode": "formula",
+  "unit": "mm",
+  "classes": ["D2","D3"]
+}</pre>
+                </div>
+                <div class="mapping-doc-card mapping-json-card mapping-json-card-secondary">
+                  <div class="mapping-doc-top">
+                    <span>.json</span>
+                    <strong>execution</strong>
+                  </div>
+                  <pre>{
+  "matching": "deterministic",
+  "lookup": "strict"
+}</pre>
+                </div>
+              </div>
+              <p class="mapping-panel-note">Machine-readable validation contracts.</p>
+            </div>
+
+            <p class="standard-mapping-takeaway">
+              Excel standards became portable validation contracts for inspection systems.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell tolerance-eval-slide">
+            <div class="tolerance-eval-title">
+              <p class="themed-kicker">Automated Evaluation</p>
+              <h2>Automated Tolerance Evaluation Using OSTP Standards</h2>
+              <p>Mapped standards turn computed measurements into inspection decisions.</p>
+            </div>
+
+            <div class="tolerance-flow">
+              <div class="tolerance-flow-card tolerance-flow-measure">
+                <span>Measured values</span>
+                <strong>Roundness and diameter </strong>
+              </div>
+              <div class="tolerance-flow-arrow" aria-hidden="true">→</div>
+              <div class="tolerance-flow-card tolerance-flow-standard">
+                <span>Selected OSTP standard</span>
+                <strong>11 mapped options</strong>
+                <p>OT code, formula, lookup, or hybrid logic</p>
+              </div>
+              <div class="tolerance-flow-arrow" aria-hidden="true">→</div>
+              <div class="tolerance-flow-card tolerance-flow-result">
+                <span>Inspection result</span>
+                <div class="tolerance-result-badges">
+                  <strong class="tolerance-pass">PASS</strong>
+                  <strong class="tolerance-fail">FAIL</strong>
+                </div>
+                <p>automatic decision</p>
+              </div>
+            </div>
+
+            <div class="tolerance-standard-strip" aria-label="Mapped OSTP standards">
+              <span class="tolerance-standard-tall"><strong>1</strong><img src="images/standards/1t3.jpg" alt="" /></span>
+              <span class="tolerance-standard-tall"><strong>2</strong><img src="images/standards/1t3.jpg" alt="" /></span>
+              <span class="tolerance-standard-tall"><strong>3</strong><img src="images/standards/1t3.jpg" alt="" /></span>
+              <span class="tolerance-standard-tall"><strong>3.1</strong><img src="images/standards/1t3.jpg" alt="" /></span>
+              <span><strong>4</strong><img src="images/standards/4n5.jpg" alt="" /></span>
+              <span><strong>5</strong><img src="images/standards/4n5.jpg" alt="" /></span>
+              <span><strong>6</strong><img src="images/standards/6n7.jpg" alt="" /></span>
+              <span><strong>7</strong><img src="images/standards/6n7.jpg" alt="" /></span>
+              <span><strong>8</strong><img src="images/standards/8.jpg" alt="" /></span>
+              <span><strong>9</strong><img src="images/standards/9.jpg" alt="" /></span>
+              <span><strong>10</strong><img src="images/standards/10.jpg" alt="" /></span>
+            </div>
+
+            <p class="tolerance-eval-takeaway">
+              The selected standard maps measured features to a clear pass/fail decision.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell app-demo-slide">
+            <style>
+              .app-demo-slide {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                padding-top: 18px;
+                padding-bottom: 12px;
+              }
+              .app-demo-header {
+                display: flex;
+                align-items: baseline;
+                gap: 16px;
+              }
+              .app-demo-header .themed-kicker {
+                margin: 0;
+                flex: 0 0 auto;
+              }
+              .app-demo-header h2 {
+                margin: 0;
+                font-size: clamp(1.34rem, 1.65vw, 1.82rem);
+                line-height: 1.05;
+                max-width: none;
+              }
+              .app-demo-board {
+                display: grid;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+                gap: 18px;
+                padding: 18px;
+                border-radius: 18px;
+                background:
+                  linear-gradient(180deg, rgba(255, 253, 250, 0.92), rgba(247, 241, 235, 0.86));
+                border: 1px solid rgba(221, 210, 200, 0.9);
+                box-shadow:
+                  0 12px 26px rgba(48, 37, 29, 0.06),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.8);
+              }
+              .app-demo-card {
+                min-height: 270px;
+                border-radius: 12px;
+                padding: 18px;
+                background: rgba(255, 255, 255, 0.78);
+                border: 1px solid rgba(214, 204, 194, 0.9);
+                box-shadow: 0 8px 18px rgba(48, 37, 29, 0.045);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 14px;
+              }
+              .app-demo-card.web {
+                border-color: rgba(31, 111, 235, 0.24);
+                background: #f5f8ff;
+              }
+              .app-demo-card.ar {
+                border-color: rgba(28, 126, 68, 0.24);
+                background: #f3fbf6;
+              }
+              .app-demo-type {
+                display: inline-flex;
+                width: fit-content;
+                padding: 6px 11px;
+                border-radius: 999px;
+                background: rgba(177, 42, 36, 0.1);
+                color: var(--accent);
+                font-size: 0.54rem;
+                font-weight: 950;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+              }
+              .app-demo-card h3 {
+                margin: 12px 0 0;
+                color: #2f3340;
+                font-size: 1.06rem;
+                line-height: 1.1;
+                letter-spacing: 0;
+              }
+              .app-demo-card p {
+                margin: 8px 0 0;
+                color: #625c57;
+                font-size: 0.66rem;
+                line-height: 1.28;
+              }
+              .app-demo-link {
+                display: block;
+                padding: 13px 14px;
+                border-radius: 10px;
+                background: rgba(255, 253, 250, 0.9);
+                border: 1px solid rgba(214, 204, 194, 0.86);
+                color: var(--accent);
+                font-size: 0.7rem;
+                font-weight: 850;
+                line-height: 1.18;
+                text-decoration: none;
+                word-break: break-word;
+              }
+              .app-demo-web-preview {
+                display: grid;
+                grid-template-columns: 0.82fr 1fr;
+                gap: 12px;
+                align-items: center;
+                padding: 14px;
+                border-radius: 12px;
+                background: rgba(255, 253, 250, 0.86);
+                border: 1px solid rgba(214, 204, 194, 0.82);
+              }
+              .app-demo-pipe-visual {
+                width: 104px;
+                height: 104px;
+                margin: 0 auto;
+                border-radius: 50%;
+                border: 8px solid rgba(177, 42, 36, 0.7);
+                box-shadow: 0 8px 18px rgba(48, 37, 29, 0.08);
+                position: relative;
+                background: rgba(255, 255, 255, 0.9);
+              }
+              .app-demo-pipe-visual::before {
+                content: "";
+                position: absolute;
+                inset: 18px;
+                border-radius: 50%;
+                border: 6px solid rgba(31, 111, 235, 0.58);
+                background: rgba(255, 255, 255, 0.96);
+              }
+              .app-demo-result-list {
+                display: grid;
+                gap: 8px;
+              }
+              .app-demo-result-row {
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                padding: 8px 10px;
+                border-radius: 8px;
+                background: rgba(245, 248, 255, 0.9);
+                border: 1px solid rgba(31, 111, 235, 0.12);
+                color: #2f3340;
+                font-size: 0.55rem;
+                font-weight: 850;
+              }
+              .app-demo-result-row strong {
+                color: var(--accent);
+                font-weight: 950;
+              }
+              .app-demo-result-pass {
+                display: inline-flex;
+                width: fit-content;
+                padding: 7px 13px;
+                border-radius: 999px;
+                background: rgba(28, 126, 68, 0.14);
+                color: #1c7e44;
+                font-size: 0.56rem;
+                font-weight: 950;
+                letter-spacing: 0.08em;
+              }
+              .app-demo-phone {
+                width: 112px;
+                height: 178px;
+                margin: 0 auto;
+                border-radius: 20px;
+                border: 5px solid #2f3340;
+                background:
+                  linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(242, 251, 246, 0.94));
+                box-shadow: 0 10px 22px rgba(48, 37, 29, 0.12);
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .app-demo-phone::before {
+                content: "";
+                position: absolute;
+                top: 7px;
+                width: 34px;
+                height: 4px;
+                border-radius: 999px;
+                background: rgba(47, 51, 64, 0.28);
+              }
+              .app-demo-target {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                border: 6px solid rgba(177, 42, 36, 0.7);
+                position: relative;
+                background: rgba(255, 255, 255, 0.9);
+              }
+              .app-demo-target::before {
+                content: "";
+                position: absolute;
+                inset: 13px;
+                border-radius: 50%;
+                border: 5px solid rgba(31, 111, 235, 0.58);
+                background: rgba(255, 255, 255, 0.96);
+              }
+            </style>
+
+            <div class="app-demo-header">
+              <p class="themed-kicker">Application Demo</p>
+              <h2>Web Inspection App and AR Measurement Demo</h2>
+            </div>
+
+            <div class="app-demo-board">
+              <div class="app-demo-card web">
+                <div>
+                  <span class="app-demo-type">Public web app</span>
+                  <h3>Pipe inspection workflow</h3>
+                  <p>Upload image, run measurement, and evaluate against mapped OSTP standards.</p>
+                </div>
+
+                <div class="app-demo-web-preview" aria-label="Web app pipe measurement preview">
+                  <div class="app-demo-pipe-visual" aria-hidden="true"></div>
+                  <div class="app-demo-result-list">
+                    <div class="app-demo-result-row">
+                      <span>Diameter</span>
+                      <strong>mm</strong>
+                    </div>
+                    <div class="app-demo-result-row">
+                      <span>Ovality</span>
+                      <strong>D<sub>max</sub> - D<sub>min</sub></strong>
+                    </div>
+                    <span class="app-demo-result-pass">PASS</span>
+                  </div>
+                </div>
+
+                <a class="app-demo-link" href="https://noviapipe.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                  noviapipe.streamlit.app
+                </a>
+              </div>
+
+              <div class="app-demo-card ar">
+                <div>
+                  <span class="app-demo-type">Classroom demo</span>
+                  <h3>Augmented reality measurement app</h3>
+                  <p>Debug APK only. Not public, not signed, and demonstrated live on a phone.</p>
+                </div>
+
+                <div class="app-demo-phone" aria-label="AR phone demo illustration">
+                  <div class="app-demo-target" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell limitations-slide">
+            <div class="limitations-title">
+              <p class="themed-kicker">Practical Constraints</p>
+              <h2>System Limitations and Practical Constraints</h2>
+            </div>
+
+            <div class="limitations-grid">
+              <article class="limitation-card">
+                <img src="images/limit1.png" alt="Pipe calibration sensitivity caused by camera angle" />
+                <div class="limitation-copy">
+                  <h3>Calibration Dependency</h3>
+                  <p>Fixed camera setup required</p>
+                  <p>Distance, angle, and zoom affect scale</p>
+                  <strong>Impact: mm measurements may drift</strong>
+                </div>
+              </article>
+
+              <article class="limitation-card">
+                <img src="images/limit 2.png" alt="Noisy edge detection around pipe rim" />
+                <div class="limitation-copy">
+                  <h3>Edge Detection Sensitivity</h3>
+                  <p>Lighting and reflections affect edges</p>
+                  <p>Noise can break contour continuity</p>
+                  <strong>Impact: unstable fitting and roundness error</strong>
+                </div>
+              </article>
+
+              <article class="limitation-card">
+                <img src="images/limit3.png" alt="2D circular assumption against tilted pipe geometry" />
+                <div class="limitation-copy">
+                  <h3>2D Geometric Limitation</h3>
+                  <p>Assumes planar circular cross-section</p>
+                  <p>Tilt and 3D deformation are not fully captured</p>
+                  <strong>Impact: incomplete shape representation</strong>
+                </div>
+              </article>
+            </div>
+
+            <p class="limitations-takeaway">
+              Measurement accuracy depends on imaging conditions and 2D assumptions.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell future-slide">
+            <div class="future-title">
+              <p class="themed-kicker">Future Directions</p>
+              <h2>From Mobile Measurement to Industrial Automation</h2>
+            </div>
+
+            <div class="future-grid">
+              <article class="future-card">
+                <img src="images/future1.png" alt="Mobile AR pipe measurement concept" />
+                <div class="future-copy">
+                  <h3>AR-Based Customer Measurement</h3>
+                  <p>Real-time diameter via mobile camera</p>
+                  <p>Accessible on-site measurement</p>
+                  <strong>Goal: quick measurement for users</strong>
+                </div>
+              </article>
+
+              <article class="future-card">
+                <img src="images/future2.png" alt="Industrial 3D camera inspection setup" />
+                <div class="future-copy">
+                  <h3>3D Camera-Based Inspection System</h3>
+                  <p>Fixed camera and controlled setup</p>
+                  <p>Stable repeatable measurement pipeline</p>
+                  <strong>Goal: machine-level inspection</strong>
+                </div>
+              </article>
+
+              <article class="future-card">
+                <img src="images/future3.png" alt="Batch processing and fast inspection workflow" />
+                <div class="future-copy">
+                  <h3>Batch Processing and Fast Lookup</h3>
+                  <p>Rapid evaluation of multiple samples</p>
+                  <p>Optimized JSON-based standard lookup</p>
+                  <strong>Goal: production throughput</strong>
+                </div>
+              </article>
+            </div>
+
+            <p class="future-takeaway">
+              The system evolves from mobile measurement into a scalable, real-time industrial inspection platform.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell conclusion-slide">
+            <div class="conclusion-title">
+              <div>
+                <p class="themed-kicker">Final Summary</p>
+                <h2>Conclusion and Contribution Summary</h2>
+              </div>
+            </div>
+
+            <div class="conclusion-body">
+              <figure class="conclusion-visual">
+                <img src="images/pipe_output.jpg" alt="Image-based pipe roundness measurement output" />
+                <figcaption>Image-based pipe measurement</figcaption>
+              </figure>
+
+              <div class="conclusion-flow" aria-label="End-to-end inspection contribution flow">
+                <article>
+                  <span>01</span>
+                  <h3>Image Measurement</h3>
+                  <p>Contour extraction with calibrated pixel-to-mm measurement.</p>
+                  <img src="images/slide9/inner_outer_px.jpg" alt="Inner and outer pixel measurement" />
+                </article>
+
+                <article>
+                  <span>02</span>
+                  <h3>Geometry Evaluation</h3>
+                  <p>LSC, MCC, MIC, and MZC roundness evaluation.</p>
+                  <img src="images/bg_newplot.png" alt="Roundness geometry plot" />
+                </article>
+
+                <article>
+                  <span>03</span>
+                  <h3>OSTP Validation</h3>
+                  <p>Standard-based tolerance checks and pass/fail decisions.</p>
+                  <img class="conclusion-card-logo" src="ostp_logo.png" alt="OSTP logo" />
+                </article>
+
+                <article>
+                  <span>04</span>
+                  <h3>Future Work</h3>
+                  <p>Mobile measurement, 3D inspection, and batch lookup for industrial deployment.</p>
+                  <img src="images/future1.png" alt="Future mobile measurement workflow" />
+                </article>
+              </div>
+            </div>
+
+            <p class="conclusion-takeaway">
+              An end-to-end system that transforms image-based measurements into standardized, interpretable, and scalable inspection results.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell references-slide">
+            <div class="references-title">
+              <p class="themed-kicker">References</p>
+              <h2>Research Sources I</h2>
+            </div>
+
+            <div class="references-grid">
+              <article>
+                <span>[1]</span>
+                <p><strong>NIST Engineering Statistics Handbook.</strong> Roundness measurements and least-squares fitting.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://itl.nist.gov/div898/handbook/mpc/section3/mpc344.htm">itl.nist.gov/div898/handbook/mpc/section3/mpc344.htm</a>
+              </article>
+
+              <article>
+                <span>[2]</span>
+                <p><strong>Samuel, G. L., & Shunmugam, M. S. (2012).</strong> Four Methods for Roundness Evaluation.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.phpro.2012.02.317">doi.org/10.1016/j.phpro.2012.02.317</a>
+              </article>
+
+              <article>
+                <span>[3]</span>
+                <p><strong>Bradski, G. (2000).</strong> The OpenCV Library. Dr. Dobb's Journal of Software Tools.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://docs.opencv.org/">docs.opencv.org</a>
+              </article>
+
+              <article>
+                <span>[4]</span>
+                <p><strong>Canny, J. (1986).</strong> A Computational Approach to Edge Detection. IEEE TPAMI.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/21869365/">pubmed.ncbi.nlm.nih.gov/21869365</a>
+              </article>
+
+              <article>
+                <span>[5]</span>
+                <p><strong>Xie, S., & Tu, Z. (2015).</strong> Holistically-Nested Edge Detection.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/1504.06375">arxiv.org/abs/1504.06375</a>
+              </article>
+            </div>
+
+            <p class="references-takeaway">
+              ISO 12181 concepts were adapted and implemented computationally using computer vision methods.
+            </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell references-slide">
+            <div class="references-title">
+              <p class="themed-kicker">References</p>
+              <h2>Research Sources II</h2>
+            </div>
+
+            <div class="references-grid">
+
+              <article>
+                <span>[6]</span>
+                <p><strong>Gander, W., Golub, G. H., & Strebel, R. (1994).</strong> Least-Squares Fitting of Circles and Ellipses.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.3929/ethz-a-000955292">doi.org/10.3929/ethz-a-000955292</a>
+              </article>
+
+              <article>
+                <span>[7]</span>
+                <p><strong>Jian Mei et al. (2025).</strong> Progressive search method for roundness evaluation based on minimum zone criterion.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12029655/">pmc.ncbi.nlm.nih.gov/articles/PMC12029655</a>
+              </article>
+
+              <article>
+                <span>[8]</span>
+                <p><strong>Measured Results Comparison (2011).</strong> Number of Points for Roundness Measurement.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.2478/v10186-010-0035-x">doi.org/10.2478/v10186-010-0035-x</a>
+              </article>
+
+              <article>
+                <span>[9]</span>
+                <p><strong>Szeliski, R. (2010).</strong> Computer Vision: Algorithms and Applications.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://szeliski.org/Book/">szeliski.org/Book</a>
+              </article>
+
+              <article>
+                <span>[10]</span>
+                <p><strong>scikit-image documentation.</strong> Image processing algorithms and measurement tools for Python.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://scikit-image.org/docs/stable/">scikit-image.org/docs/stable</a>
+              </article>
+            </div>
+
+            <p class="references-takeaway">
+              The implementation combines open computer vision methods with standard roundness evaluation concepts.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        controls: false,
+        progress: true,
+        center: false,
+        transition: "slide",
+        backgroundTransition: "fade"
+      });
+
+      const updateFullscreenState = () => {
+        const fillsScreen =
+          window.innerWidth >= window.screen.width * 0.94 &&
+          window.innerHeight >= window.screen.height * 0.86;
+        document.body.classList.toggle(
+          "is-deck-fullscreen",
+          Boolean(document.fullscreenElement) || fillsScreen
+        );
+      };
+
+      document.addEventListener("fullscreenchange", updateFullscreenState);
+      window.addEventListener("resize", updateFullscreenState);
+      updateFullscreenState();
+
+      const lscDemo = document.querySelector(".lsc-demo");
+
+      if (lscDemo) {
+        const svg = lscDemo.querySelector(".lsc-demo-svg");
+        const pointLayer = lscDemo.querySelector(".lsc-points");
+        const residualLayer = lscDemo.querySelector(".lsc-residuals");
+        const fitCircle = lscDemo.querySelector(".lsc-fit-circle");
+        const centerMarker = lscDemo.querySelector(".lsc-center-marker");
+        const centerLabel = lscDemo.querySelector(".lsc-label-center");
+        const radiusLabel = lscDemo.querySelector(".lsc-label-radius");
+        const errorLabel = lscDemo.querySelector(".lsc-label-error");
+        const bounds = { minX: 92, maxX: 548, minY: 76, maxY: 356 };
+        const points = [
+          { x: 438, y: 112, phase: 0.1 },
+          { x: 500, y: 184, phase: 0.8 },
+          { x: 480, y: 278, phase: 1.6 },
+          { x: 396, y: 338, phase: 2.3 },
+          { x: 286, y: 342, phase: 3.1 },
+          { x: 184, y: 286, phase: 3.9 },
+          { x: 144, y: 188, phase: 4.8 },
+          { x: 218, y: 106, phase: 5.6 },
+          { x: 326, y: 82, phase: 6.2 }
+        ].map((point) => ({ ...point, baseX: point.x, baseY: point.y }));
+        let activePoint = null;
+        let lastTime = 0;
+
+        const createSvgElement = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const pointNodes = points.map((point, index) => {
+          const dot = createSvgElement("circle");
+          dot.dataset.index = index;
+          pointLayer.appendChild(dot);
+          return dot;
+        });
+
+        const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+
+        const solve3 = (matrix, vector) => {
+          const rows = matrix.map((row, index) => [...row, vector[index]]);
+
+          for (let pivot = 0; pivot < 3; pivot += 1) {
+            let bestRow = pivot;
+
+            for (let row = pivot + 1; row < 3; row += 1) {
+              if (Math.abs(rows[row][pivot]) > Math.abs(rows[bestRow][pivot])) {
+                bestRow = row;
+              }
+            }
+
+            if (Math.abs(rows[bestRow][pivot]) < 1e-9) {
+              return null;
+            }
+
+            [rows[pivot], rows[bestRow]] = [rows[bestRow], rows[pivot]];
+
+            const pivotValue = rows[pivot][pivot];
+            for (let col = pivot; col < 4; col += 1) {
+              rows[pivot][col] /= pivotValue;
+            }
+
+            for (let row = 0; row < 3; row += 1) {
+              if (row === pivot) {
+                continue;
+              }
+
+              const factor = rows[row][pivot];
+              for (let col = pivot; col < 4; col += 1) {
+                rows[row][col] -= factor * rows[pivot][col];
+              }
+            }
+          }
+
+          return [rows[0][3], rows[1][3], rows[2][3]];
+        };
+
+        const fitLeastSquaresCircle = () => {
+          const ata = [
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0]
+          ];
+          const atb = [0, 0, 0];
+
+          points.forEach(({ x, y }) => {
+            const row = [x, y, 1];
+            const value = -(x * x + y * y);
+
+            for (let i = 0; i < 3; i += 1) {
+              atb[i] += row[i] * value;
+              for (let j = 0; j < 3; j += 1) {
+                ata[i][j] += row[i] * row[j];
+              }
+            }
+          });
+
+          const solution = solve3(ata, atb);
+
+          if (!solution) {
+            return { cx: 320, cy: 215, r: 120, error: 0 };
+          }
+
+          const [d, e, f] = solution;
+          const cx = -d / 2;
+          const cy = -e / 2;
+          const r = Math.sqrt(Math.max(0, cx * cx + cy * cy - f));
+          const error = points.reduce((sum, { x, y }) => {
+            const distance = Math.hypot(x - cx, y - cy);
+            return sum + (distance - r) ** 2;
+          }, 0);
+
+          return { cx, cy, r, error };
+        };
+
+        const svgPointFromEvent = (event) => {
+          const point = svg.createSVGPoint();
+          point.x = event.clientX;
+          point.y = event.clientY;
+          return point.matrixTransform(svg.getScreenCTM().inverse());
+        };
+
+        const render = () => {
+          const fit = fitLeastSquaresCircle();
+          fitCircle.setAttribute("cx", fit.cx.toFixed(2));
+          fitCircle.setAttribute("cy", fit.cy.toFixed(2));
+          fitCircle.setAttribute("r", fit.r.toFixed(2));
+          centerMarker.setAttribute("transform", `translate(${(fit.cx - 320).toFixed(2)} ${(fit.cy - 215).toFixed(2)})`);
+
+          residualLayer.replaceChildren();
+
+          points.forEach((point, index) => {
+            const angle = Math.atan2(point.y - fit.cy, point.x - fit.cx);
+            const circleX = fit.cx + Math.cos(angle) * fit.r;
+            const circleY = fit.cy + Math.sin(angle) * fit.r;
+            const residual = createSvgElement("line");
+            residual.setAttribute("x1", point.x.toFixed(2));
+            residual.setAttribute("y1", point.y.toFixed(2));
+            residual.setAttribute("x2", circleX.toFixed(2));
+            residual.setAttribute("y2", circleY.toFixed(2));
+            residualLayer.appendChild(residual);
+
+            const dot = pointNodes[index];
+            dot.setAttribute("cx", point.x.toFixed(2));
+            dot.setAttribute("cy", point.y.toFixed(2));
+            dot.setAttribute("r", activePoint === index ? "11" : "9");
+          });
+
+          centerLabel.textContent = `center: (${Math.round(fit.cx)}, ${Math.round(fit.cy)})`;
+          radiusLabel.textContent = `radius: ${Math.round(fit.r)} px`;
+          errorLabel.textContent = `total error: ${Math.round(fit.error)}`;
+        };
+
+        const animate = (time) => {
+          if (document.body.classList.contains("is-deck-fullscreen") && activePoint === null) {
+            const step = Math.min(32, time - lastTime || 16) / 1000;
+
+            points.forEach((point) => {
+              const driftX = Math.cos(time * 0.0007 + point.phase) * 8;
+              const driftY = Math.sin(time * 0.0009 + point.phase) * 8;
+              point.x += (point.baseX + driftX - point.x) * step * 1.9;
+              point.y += (point.baseY + driftY - point.y) * step * 1.9;
+            });
+
+            render();
+          }
+
+          lastTime = time;
+          requestAnimationFrame(animate);
+        };
+
+        pointLayer.addEventListener("pointerdown", (event) => {
+          const index = Number(event.target.dataset.index);
+
+          if (Number.isNaN(index)) {
+            return;
+          }
+
+          activePoint = index;
+          event.preventDefault();
+          svg.setPointerCapture(event.pointerId);
+        });
+
+        svg.addEventListener("pointermove", (event) => {
+          if (activePoint === null) {
+            return;
+          }
+
+          const pointer = svgPointFromEvent(event);
+          const point = points[activePoint];
+          point.x = clamp(pointer.x, bounds.minX, bounds.maxX);
+          point.y = clamp(pointer.y, bounds.minY, bounds.maxY);
+          point.baseX = point.x;
+          point.baseY = point.y;
+          render();
+        });
+
+        const releasePoint = () => {
+          activePoint = null;
+          render();
+        };
+
+        svg.addEventListener("pointerup", releasePoint);
+        svg.addEventListener("pointercancel", releasePoint);
+        svg.addEventListener("pointerleave", releasePoint);
+        render();
+        requestAnimationFrame(animate);
+      }
+
+      const mccDemo = document.querySelector(".mcc-demo");
+
+      if (mccDemo) {
+        const svg = mccDemo.querySelector(".mcc-demo-svg");
+        const pointLayer = mccDemo.querySelector(".mcc-points");
+        const controlLayer = mccDemo.querySelector(".mcc-control-lines");
+        const boundaryCircle = mccDemo.querySelector(".mcc-boundary-circle");
+        const centerMarker = mccDemo.querySelector(".mcc-center-marker");
+        const radiusLabel = mccDemo.querySelector(".mcc-label-radius");
+        const controlsLabel = mccDemo.querySelector(".mcc-label-controls");
+        const bounds = { minX: 92, maxX: 548, minY: 76, maxY: 356 };
+        const points = [
+          { x: 440, y: 120 },
+          { x: 506, y: 218 },
+          { x: 398, y: 332 },
+          { x: 270, y: 336 },
+          { x: 148, y: 258 },
+          { x: 164, y: 138 },
+          { x: 304, y: 104 },
+          { x: 352, y: 220 }
+        ];
+        let activePoint = null;
+
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const pointNodes = points.map((point, index) => {
+          const dot = makeSvg("circle");
+          dot.dataset.index = index;
+          pointLayer.appendChild(dot);
+          return dot;
+        });
+        const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+        const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+        const circleFromTwo = (a, b) => ({
+          cx: (a.x + b.x) / 2,
+          cy: (a.y + b.y) / 2,
+          r: distance(a, b) / 2,
+          controls: [a.index, b.index]
+        });
+        const circleFromThree = (a, b, c) => {
+          const d =
+            2 *
+            (a.x * (b.y - c.y) +
+              b.x * (c.y - a.y) +
+              c.x * (a.y - b.y));
+
+          if (Math.abs(d) < 1e-8) {
+            return null;
+          }
+
+          const ux =
+            ((a.x * a.x + a.y * a.y) * (b.y - c.y) +
+              (b.x * b.x + b.y * b.y) * (c.y - a.y) +
+              (c.x * c.x + c.y * c.y) * (a.y - b.y)) /
+            d;
+          const uy =
+            ((a.x * a.x + a.y * a.y) * (c.x - b.x) +
+              (b.x * b.x + b.y * b.y) * (a.x - c.x) +
+              (c.x * c.x + c.y * c.y) * (b.x - a.x)) /
+            d;
+
+          return {
+            cx: ux,
+            cy: uy,
+            r: Math.hypot(a.x - ux, a.y - uy),
+            controls: [a.index, b.index, c.index]
+          };
+        };
+        const containsAll = (circle, candidates) =>
+          candidates.every((point) => Math.hypot(point.x - circle.cx, point.y - circle.cy) <= circle.r + 0.75);
+        const findMinimumCircle = () => {
+          const candidates = points.map((point, index) => ({ ...point, index }));
+          let best = null;
+
+          for (let i = 0; i < candidates.length; i += 1) {
+            for (let j = i + 1; j < candidates.length; j += 1) {
+              const circle = circleFromTwo(candidates[i], candidates[j]);
+
+              if (containsAll(circle, candidates) && (!best || circle.r < best.r)) {
+                best = circle;
+              }
+            }
+          }
+
+          for (let i = 0; i < candidates.length; i += 1) {
+            for (let j = i + 1; j < candidates.length; j += 1) {
+              for (let k = j + 1; k < candidates.length; k += 1) {
+                const circle = circleFromThree(candidates[i], candidates[j], candidates[k]);
+
+                if (circle && containsAll(circle, candidates) && (!best || circle.r < best.r)) {
+                  best = circle;
+                }
+              }
+            }
+          }
+
+          if (!best) {
+            best = { cx: candidates[0].x, cy: candidates[0].y, r: 0, controls: [0] };
+          }
+
+          best.controls = candidates
+            .filter((point) => Math.abs(Math.hypot(point.x - best.cx, point.y - best.cy) - best.r) < 1.1)
+            .map((point) => point.index);
+
+          return best;
+        };
+        const svgPointFromEvent = (event) => {
+          const point = svg.createSVGPoint();
+          point.x = event.clientX;
+          point.y = event.clientY;
+          return point.matrixTransform(svg.getScreenCTM().inverse());
+        };
+        const render = () => {
+          const circle = findMinimumCircle();
+          boundaryCircle.setAttribute("cx", circle.cx.toFixed(2));
+          boundaryCircle.setAttribute("cy", circle.cy.toFixed(2));
+          boundaryCircle.setAttribute("r", circle.r.toFixed(2));
+          centerMarker.setAttribute("transform", `translate(${(circle.cx - 320).toFixed(2)} ${(circle.cy - 215).toFixed(2)})`);
+          controlLayer.replaceChildren();
+
+          points.forEach((point, index) => {
+            const isControl = circle.controls.includes(index);
+
+            if (isControl) {
+              const line = makeSvg("line");
+              line.setAttribute("x1", circle.cx.toFixed(2));
+              line.setAttribute("y1", circle.cy.toFixed(2));
+              line.setAttribute("x2", point.x.toFixed(2));
+              line.setAttribute("y2", point.y.toFixed(2));
+              controlLayer.appendChild(line);
+            }
+
+            const dot = pointNodes[index];
+            dot.setAttribute("cx", point.x.toFixed(2));
+            dot.setAttribute("cy", point.y.toFixed(2));
+            dot.setAttribute("r", activePoint === index ? "11" : "9");
+            dot.classList.toggle("is-control", isControl);
+          });
+
+          radiusLabel.textContent = `radius: ${Math.round(circle.r)} px`;
+          controlsLabel.textContent = `controlling points: ${circle.controls.map((index) => index + 1).join(", ")}`;
+        };
+
+        pointLayer.addEventListener("pointerdown", (event) => {
+          const index = Number(event.target.dataset.index);
+
+          if (Number.isNaN(index)) {
+            return;
+          }
+
+          activePoint = index;
+          event.preventDefault();
+          svg.setPointerCapture(event.pointerId);
+        });
+
+        svg.addEventListener("pointermove", (event) => {
+          if (activePoint === null) {
+            return;
+          }
+
+          const pointer = svgPointFromEvent(event);
+          points[activePoint].x = clamp(pointer.x, bounds.minX, bounds.maxX);
+          points[activePoint].y = clamp(pointer.y, bounds.minY, bounds.maxY);
+          render();
+        });
+
+        const releasePoint = () => {
+          activePoint = null;
+          render();
+        };
+
+        svg.addEventListener("pointerup", releasePoint);
+        svg.addEventListener("pointercancel", releasePoint);
+        svg.addEventListener("pointerleave", releasePoint);
+        render();
+      }
+
+      const micDemo = document.querySelector(".mic-demo");
+
+      if (micDemo) {
+        const svg = micDemo.querySelector(".mic-demo-svg");
+        const pointLayer = micDemo.querySelector(".mic-points");
+        const limitLayer = micDemo.querySelector(".mic-limit-lines");
+        const profile = micDemo.querySelector(".mic-profile");
+        const innerCircle = micDemo.querySelector(".mic-inner-circle");
+        const centerMarker = micDemo.querySelector(".mic-center-marker");
+        const radiusLabel = micDemo.querySelector(".mic-label-radius");
+        const controlsLabel = micDemo.querySelector(".mic-label-controls");
+        const bounds = { minX: 112, maxX: 528, minY: 84, maxY: 350 };
+        const points = [
+          { x: 440, y: 104 },
+          { x: 512, y: 198 },
+          { x: 462, y: 306 },
+          { x: 344, y: 338 },
+          { x: 236, y: 322 },
+          { x: 148, y: 238 },
+          { x: 180, y: 126 },
+          { x: 292, y: 118 }
+        ];
+        let activePoint = null;
+
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const pointNodes = points.map((point, index) => {
+          const dot = makeSvg("circle");
+          dot.dataset.index = index;
+          pointLayer.appendChild(dot);
+          return dot;
+        });
+        const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+        const svgPointFromEvent = (event) => {
+          const point = svg.createSVGPoint();
+          point.x = event.clientX;
+          point.y = event.clientY;
+          return point.matrixTransform(svg.getScreenCTM().inverse());
+        };
+        const isInsideProfile = (x, y) => {
+          let inside = false;
+
+          for (let i = 0, j = points.length - 1; i < points.length; j = i, i += 1) {
+            const pi = points[i];
+            const pj = points[j];
+            const crosses = pi.y > y !== pj.y > y;
+
+            if (crosses) {
+              const edgeX = ((pj.x - pi.x) * (y - pi.y)) / (pj.y - pi.y) + pi.x;
+
+              if (x < edgeX) {
+                inside = !inside;
+              }
+            }
+          }
+
+          return inside;
+        };
+        const findInscribedCircle = () => {
+          let current = points.reduce(
+            (sum, point) => ({ x: sum.x + point.x / points.length, y: sum.y + point.y / points.length }),
+            { x: 0, y: 0 }
+          );
+
+          const scoreAt = (candidate) => {
+            if (!isInsideProfile(candidate.x, candidate.y)) {
+              return -Infinity;
+            }
+
+            return points.reduce(
+              (nearest, point) => Math.min(nearest, Math.hypot(point.x - candidate.x, point.y - candidate.y)),
+              Infinity
+            );
+          };
+
+          let bestScore = scoreAt(current);
+          let step = 72;
+          const directions = [
+            [1, 0],
+            [-1, 0],
+            [0, 1],
+            [0, -1],
+            [1, 1],
+            [1, -1],
+            [-1, 1],
+            [-1, -1]
+          ];
+
+          while (step > 0.45) {
+            let improved = false;
+
+            directions.forEach(([dx, dy]) => {
+              const candidate = {
+                x: clamp(current.x + dx * step, bounds.minX, bounds.maxX),
+                y: clamp(current.y + dy * step, bounds.minY, bounds.maxY)
+              };
+              const candidateScore = scoreAt(candidate);
+
+              if (candidateScore > bestScore) {
+                current = candidate;
+                bestScore = candidateScore;
+                improved = true;
+              }
+            });
+
+            if (!improved) {
+              step *= 0.5;
+            }
+          }
+
+          const distances = points.map((point, index) => ({
+            index,
+            value: Math.hypot(point.x - current.x, point.y - current.y)
+          }));
+          const minDistance = distances.reduce((min, item) => (item.value < min.value ? item : min), distances[0]);
+          const controlIndexes = distances
+            .filter((item) => Math.abs(item.value - minDistance.value) < 1.1)
+            .map((item) => item.index);
+
+          return { ...current, r: minDistance.value, controlIndexes };
+        };
+        const profilePath = () =>
+          points
+            .map((point, index) => `${index === 0 ? "M" : "L"}${point.x.toFixed(1)} ${point.y.toFixed(1)}`)
+            .join(" ") + " Z";
+        const render = () => {
+          const circle = findInscribedCircle();
+
+          profile.setAttribute("d", profilePath());
+          innerCircle.setAttribute("cx", circle.x.toFixed(2));
+          innerCircle.setAttribute("cy", circle.y.toFixed(2));
+          innerCircle.setAttribute("r", circle.r.toFixed(2));
+          centerMarker.setAttribute("transform", `translate(${(circle.x - 320).toFixed(2)} ${(circle.y - 215).toFixed(2)})`);
+          limitLayer.replaceChildren();
+
+          points.forEach((point, index) => {
+            const isControl = circle.controlIndexes.includes(index);
+
+            if (isControl) {
+              const line = makeSvg("line");
+              line.setAttribute("x1", circle.x.toFixed(2));
+              line.setAttribute("y1", circle.y.toFixed(2));
+              line.setAttribute("x2", point.x.toFixed(2));
+              line.setAttribute("y2", point.y.toFixed(2));
+              limitLayer.appendChild(line);
+            }
+
+            const dot = pointNodes[index];
+            dot.setAttribute("cx", point.x.toFixed(2));
+            dot.setAttribute("cy", point.y.toFixed(2));
+            dot.setAttribute("r", activePoint === index ? "11" : "9");
+            dot.classList.toggle("is-control", isControl);
+          });
+
+          radiusLabel.textContent = `radius: ${Math.round(circle.r)} px`;
+          controlsLabel.textContent = `controlling point: ${circle.controlIndexes.map((index) => index + 1).join(", ")}`;
+        };
+
+        pointLayer.addEventListener("pointerdown", (event) => {
+          const index = Number(event.target.dataset.index);
+
+          if (Number.isNaN(index)) {
+            return;
+          }
+
+          activePoint = index;
+          event.preventDefault();
+          svg.setPointerCapture(event.pointerId);
+        });
+
+        svg.addEventListener("pointermove", (event) => {
+          if (activePoint === null) {
+            return;
+          }
+
+          const pointer = svgPointFromEvent(event);
+          points[activePoint].x = clamp(pointer.x, bounds.minX, bounds.maxX);
+          points[activePoint].y = clamp(pointer.y, bounds.minY, bounds.maxY);
+          render();
+        });
+
+        const releasePoint = () => {
+          activePoint = null;
+          render();
+        };
+
+        svg.addEventListener("pointerup", releasePoint);
+        svg.addEventListener("pointercancel", releasePoint);
+        svg.addEventListener("pointerleave", releasePoint);
+        render();
+      }
+
+      const mzcDemo = document.querySelector(".mzc-demo");
+
+      if (mzcDemo) {
+        const svg = mzcDemo.querySelector(".mzc-demo-svg");
+        const pointLayer = mzcDemo.querySelector(".mzc-points");
+        const controlLayer = mzcDemo.querySelector(".mzc-control-lines");
+        const outerCircle = mzcDemo.querySelector(".mzc-outer-circle");
+        const innerCircle = mzcDemo.querySelector(".mzc-inner-circle");
+        const centerMarker = mzcDemo.querySelector(".mzc-center-marker");
+        const radiiLabel = mzcDemo.querySelector(".mzc-label-radii");
+        const errorLabel = mzcDemo.querySelector(".mzc-label-error");
+        const bounds = { minX: 112, maxX: 528, minY: 84, maxY: 350 };
+        const points = [
+          { x: 438, y: 106 },
+          { x: 506, y: 202 },
+          { x: 452, y: 306 },
+          { x: 338, y: 342 },
+          { x: 230, y: 312 },
+          { x: 142, y: 236 },
+          { x: 174, y: 132 },
+          { x: 306, y: 96 }
+        ];
+        let activePoint = null;
+
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const pointNodes = points.map((point, index) => {
+          const dot = makeSvg("circle");
+          dot.dataset.index = index;
+          pointLayer.appendChild(dot);
+          return dot;
+        });
+        const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+        const svgPointFromEvent = (event) => {
+          const point = svg.createSVGPoint();
+          point.x = event.clientX;
+          point.y = event.clientY;
+          return point.matrixTransform(svg.getScreenCTM().inverse());
+        };
+        const findZone = () => {
+          const center = points.reduce(
+            (sum, point) => ({ x: sum.x + point.x / points.length, y: sum.y + point.y / points.length }),
+            { x: 0, y: 0 }
+          );
+          const distances = points.map((point, index) => ({
+            index,
+            value: Math.hypot(point.x - center.x, point.y - center.y)
+          }));
+          const min = distances.reduce((best, item) => (item.value < best.value ? item : best), distances[0]);
+          const max = distances.reduce((best, item) => (item.value > best.value ? item : best), distances[0]);
+          const minIndexes = distances
+            .filter((item) => Math.abs(item.value - min.value) < 1.1)
+            .map((item) => item.index);
+          const maxIndexes = distances
+            .filter((item) => Math.abs(item.value - max.value) < 1.1)
+            .map((item) => item.index);
+
+          return { center, min, max, minIndexes, maxIndexes };
+        };
+        const render = () => {
+          const zone = findZone();
+          outerCircle.setAttribute("cx", zone.center.x.toFixed(2));
+          outerCircle.setAttribute("cy", zone.center.y.toFixed(2));
+          outerCircle.setAttribute("r", zone.max.value.toFixed(2));
+          innerCircle.setAttribute("cx", zone.center.x.toFixed(2));
+          innerCircle.setAttribute("cy", zone.center.y.toFixed(2));
+          innerCircle.setAttribute("r", zone.min.value.toFixed(2));
+          centerMarker.setAttribute("transform", `translate(${(zone.center.x - 320).toFixed(2)} ${(zone.center.y - 215).toFixed(2)})`);
+          controlLayer.replaceChildren();
+
+          points.forEach((point, index) => {
+            const isMax = zone.maxIndexes.includes(index);
+            const isMin = zone.minIndexes.includes(index);
+
+            if (isMax || isMin) {
+              const line = makeSvg("line");
+              line.setAttribute("x1", zone.center.x.toFixed(2));
+              line.setAttribute("y1", zone.center.y.toFixed(2));
+              line.setAttribute("x2", point.x.toFixed(2));
+              line.setAttribute("y2", point.y.toFixed(2));
+              line.classList.toggle("is-max", isMax);
+              line.classList.toggle("is-min", isMin);
+              controlLayer.appendChild(line);
+            }
+
+            const dot = pointNodes[index];
+            dot.setAttribute("cx", point.x.toFixed(2));
+            dot.setAttribute("cy", point.y.toFixed(2));
+            dot.setAttribute("r", activePoint === index ? "11" : "9");
+            dot.classList.toggle("is-max", isMax);
+            dot.classList.toggle("is-min", isMin);
+          });
+
+          radiiLabel.textContent = `rmax: ${Math.round(zone.max.value)}  rmin: ${Math.round(zone.min.value)}`;
+          errorLabel.textContent = `error: ${Math.round(zone.max.value - zone.min.value)} px`;
+        };
+
+        pointLayer.addEventListener("pointerdown", (event) => {
+          const index = Number(event.target.dataset.index);
+
+          if (Number.isNaN(index)) {
+            return;
+          }
+
+          activePoint = index;
+          event.preventDefault();
+          svg.setPointerCapture(event.pointerId);
+        });
+
+        svg.addEventListener("pointermove", (event) => {
+          if (activePoint === null) {
+            return;
+          }
+
+          const pointer = svgPointFromEvent(event);
+          points[activePoint].x = clamp(pointer.x, bounds.minX, bounds.maxX);
+          points[activePoint].y = clamp(pointer.y, bounds.minY, bounds.maxY);
+          render();
+        });
+
+        const releasePoint = () => {
+          activePoint = null;
+          render();
+        };
+
+        svg.addEventListener("pointerup", releasePoint);
+        svg.addEventListener("pointercancel", releasePoint);
+        svg.addEventListener("pointerleave", releasePoint);
+        render();
+      }
+
+      const lscComputeDemo = document.querySelector(".lsc-compute-demo");
+
+      if (lscComputeDemo) {
+        const pointsLayer = lscComputeDemo.querySelector(".lsc-compute-points");
+        const residualsLayer = lscComputeDemo.querySelector(".lsc-compute-residuals");
+        const barsLayer = lscComputeDemo.querySelector(".lsc-error-bars");
+        const distanceLine = lscComputeDemo.querySelector(".lsc-compute-distance");
+        const radiusLine = lscComputeDemo.querySelector(".lsc-compute-radius");
+        const diLabel = lscComputeDemo.querySelector(".lsc-compute-di-label");
+        const devLabel = lscComputeDemo.querySelector(".lsc-compute-dev-label");
+        const stepLabel = lscComputeDemo.querySelector(".lsc-compute-step");
+        const diValue = lscComputeDemo.querySelector(".lsc-compute-di-value");
+        const devValue = lscComputeDemo.querySelector(".lsc-compute-dev-value");
+        const squareValue = lscComputeDemo.querySelector(".lsc-compute-square-value");
+        const sumValue = lscComputeDemo.querySelector(".lsc-compute-sum-value");
+        const center = { x: 214, y: 214 };
+        const radius = 114;
+        const computePoints = [
+          { x: 330, y: 110 },
+          { x: 356, y: 205 },
+          { x: 312, y: 310 },
+          { x: 205, y: 338 },
+          { x: 107, y: 278 },
+          { x: 96, y: 172 },
+          { x: 176, y: 92 }
+        ];
+
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const contributions = computePoints.map((point) => {
+          const angle = Math.atan2(point.y - center.y, point.x - center.x);
+          const distance = Math.hypot(point.x - center.x, point.y - center.y);
+          const circleX = center.x + Math.cos(angle) * radius;
+          const circleY = center.y + Math.sin(angle) * radius;
+          const deviation = distance - radius;
+          const square = deviation * deviation;
+          return { ...point, angle, distance, circleX, circleY, deviation, square };
+        });
+
+        contributions.forEach((point, index) => {
+          const residual = makeSvg("line");
+          residual.setAttribute("x1", point.x.toFixed(2));
+          residual.setAttribute("y1", point.y.toFixed(2));
+          residual.setAttribute("x2", point.circleX.toFixed(2));
+          residual.setAttribute("y2", point.circleY.toFixed(2));
+          residual.dataset.index = index;
+          residualsLayer.appendChild(residual);
+
+          const dot = makeSvg("circle");
+          dot.setAttribute("cx", point.x.toFixed(2));
+          dot.setAttribute("cy", point.y.toFixed(2));
+          dot.setAttribute("r", "8");
+          dot.dataset.index = index;
+          pointsLayer.appendChild(dot);
+
+          const bar = makeSvg("rect");
+          bar.setAttribute("x", String(index * 28));
+          bar.setAttribute("y", String(54 - Math.min(52, point.square / 9)));
+          bar.setAttribute("width", "18");
+          bar.setAttribute("height", String(Math.max(4, Math.min(52, point.square / 9))));
+          bar.setAttribute("rx", "4");
+          bar.dataset.index = index;
+          barsLayer.appendChild(bar);
+        });
+
+        const renderComputeStep = (time) => {
+          const active = Math.floor((time / 1250) % contributions.length);
+          const runningSum = contributions
+            .slice(0, active + 1)
+            .reduce((sum, point) => sum + point.square, 0);
+          const point = contributions[active];
+          const radiusX = center.x + Math.cos(point.angle) * radius;
+          const radiusY = center.y + Math.sin(point.angle) * radius;
+
+          distanceLine.setAttribute("x2", point.x.toFixed(2));
+          distanceLine.setAttribute("y2", point.y.toFixed(2));
+          radiusLine.setAttribute("x2", radiusX.toFixed(2));
+          radiusLine.setAttribute("y2", radiusY.toFixed(2));
+          diLabel.setAttribute("x", String((center.x + point.x) / 2 + 12));
+          diLabel.setAttribute("y", String((center.y + point.y) / 2 - 10));
+          devLabel.setAttribute("x", String((point.x + point.circleX) / 2 + 10));
+          devLabel.setAttribute("y", String((point.y + point.circleY) / 2 + 6));
+
+          pointsLayer.querySelectorAll("circle").forEach((dot) => {
+            dot.classList.toggle("is-active", Number(dot.dataset.index) === active);
+          });
+          residualsLayer.querySelectorAll("line").forEach((line) => {
+            line.classList.toggle("is-active", Number(line.dataset.index) === active);
+          });
+          barsLayer.querySelectorAll("rect").forEach((bar) => {
+            bar.classList.toggle("is-active", Number(bar.dataset.index) === active);
+          });
+
+          stepLabel.textContent = `point i: ${active + 1}`;
+          diValue.textContent = `dᵢ = ${point.distance.toFixed(1)} px`;
+          devValue.textContent = `dᵢ − r = ${point.deviation.toFixed(1)} px`;
+          squareValue.textContent = `(dᵢ − r)² = ${point.square.toFixed(0)}`;
+          sumValue.textContent = `running Σ = ${runningSum.toFixed(0)}`;
+        };
+
+        const animateCompute = (time) => {
+          if (document.body.classList.contains("is-deck-fullscreen")) {
+            renderComputeStep(time);
+          }
+
+          requestAnimationFrame(animateCompute);
+        };
+
+        renderComputeStep(0);
+        requestAnimationFrame(animateCompute);
+      }
+
+      const mccComputeDemo = document.querySelector(".mcc-compute-demo");
+
+      if (mccComputeDemo) {
+        const pointsLayer = mccComputeDemo.querySelector(".mcc-compute-points");
+        const linesLayer = mccComputeDemo.querySelector(".mcc-compute-distance-lines");
+        const barsLayer = mccComputeDemo.querySelector(".mcc-distance-bars");
+        const boundary = mccComputeDemo.querySelector(".mcc-compute-boundary");
+        const stepLabel = mccComputeDemo.querySelector(".mcc-compute-step");
+        const distanceValue = mccComputeDemo.querySelector(".mcc-compute-distance-value");
+        const maxValue = mccComputeDemo.querySelector(".mcc-compute-max-value");
+        const resultLabel = mccComputeDemo.querySelector(".mcc-compute-result");
+        const center = { x: 214, y: 214 };
+        const points = [
+          { x: 322, y: 112 },
+          { x: 346, y: 218 },
+          { x: 296, y: 315 },
+          { x: 188, y: 336 },
+          { x: 104, y: 268 },
+          { x: 100, y: 166 },
+          { x: 198, y: 96 }
+        ];
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const distances = points.map((point, index) => ({
+          ...point,
+          index,
+          value: Math.hypot(point.x - center.x, point.y - center.y)
+        }));
+        const maxDistance = distances.reduce((max, point) => (point.value > max.value ? point : max), distances[0]);
+
+        boundary.setAttribute("r", maxDistance.value.toFixed(2));
+
+        distances.forEach((point) => {
+          const line = makeSvg("line");
+          line.setAttribute("x1", center.x);
+          line.setAttribute("y1", center.y);
+          line.setAttribute("x2", point.x.toFixed(2));
+          line.setAttribute("y2", point.y.toFixed(2));
+          line.dataset.index = point.index;
+          linesLayer.appendChild(line);
+
+          const dot = makeSvg("circle");
+          dot.setAttribute("cx", point.x.toFixed(2));
+          dot.setAttribute("cy", point.y.toFixed(2));
+          dot.setAttribute("r", "8");
+          dot.dataset.index = point.index;
+          pointsLayer.appendChild(dot);
+
+          const barHeight = Math.max(8, point.value * 0.38);
+          const bar = makeSvg("rect");
+          bar.setAttribute("x", String(point.index * 28));
+          bar.setAttribute("y", String(72 - barHeight));
+          bar.setAttribute("width", "18");
+          bar.setAttribute("height", String(barHeight));
+          bar.setAttribute("rx", "4");
+          bar.dataset.index = point.index;
+          barsLayer.appendChild(bar);
+        });
+
+        const renderMccComputeStep = (time) => {
+          const active = Math.floor((time / 1100) % distances.length);
+          const currentMax = distances
+            .slice(0, active + 1)
+            .reduce((max, point) => (point.value > max.value ? point : max), distances[0]);
+
+          linesLayer.querySelectorAll("line").forEach((line) => {
+            const index = Number(line.dataset.index);
+            line.classList.toggle("is-active", index === active);
+            line.classList.toggle("is-max", index === currentMax.index);
+          });
+          pointsLayer.querySelectorAll("circle").forEach((dot) => {
+            const index = Number(dot.dataset.index);
+            dot.classList.toggle("is-active", index === active);
+            dot.classList.toggle("is-max", index === currentMax.index);
+          });
+          barsLayer.querySelectorAll("rect").forEach((bar) => {
+            const index = Number(bar.dataset.index);
+            bar.classList.toggle("is-active", index === active);
+            bar.classList.toggle("is-max", index === currentMax.index);
+          });
+
+          stepLabel.textContent = `checking: d${active + 1}`;
+          distanceValue.textContent = `dᵢ = ${distances[active].value.toFixed(1)} px`;
+          maxValue.textContent = `current max = d${currentMax.index + 1} = ${currentMax.value.toFixed(1)} px`;
+          resultLabel.textContent =
+            currentMax.index === maxDistance.index
+              ? "radius = farthest point"
+              : "keep scanning distances";
+        };
+
+        const animateMccCompute = (time) => {
+          if (document.body.classList.contains("is-deck-fullscreen")) {
+            renderMccComputeStep(time);
+          }
+
+          requestAnimationFrame(animateMccCompute);
+        };
+
+        renderMccComputeStep(0);
+        requestAnimationFrame(animateMccCompute);
+      }
+
+      const micComputeDemo = document.querySelector(".mic-compute-demo");
+
+      if (micComputeDemo) {
+        const pointsLayer = micComputeDemo.querySelector(".mic-compute-points");
+        const linesLayer = micComputeDemo.querySelector(".mic-compute-distance-lines");
+        const barsLayer = micComputeDemo.querySelector(".mic-distance-bars");
+        const boundary = micComputeDemo.querySelector(".mic-compute-boundary");
+        const stepLabel = micComputeDemo.querySelector(".mic-compute-step");
+        const distanceValue = micComputeDemo.querySelector(".mic-compute-distance-value");
+        const minValue = micComputeDemo.querySelector(".mic-compute-min-value");
+        const resultLabel = micComputeDemo.querySelector(".mic-compute-result");
+        const center = { x: 214, y: 214 };
+        const points = [
+          { x: 324, y: 120 },
+          { x: 340, y: 214 },
+          { x: 290, y: 318 },
+          { x: 202, y: 310 },
+          { x: 116, y: 272 },
+          { x: 126, y: 160 },
+          { x: 210, y: 104 }
+        ];
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const distances = points.map((point, index) => ({
+          ...point,
+          index,
+          value: Math.hypot(point.x - center.x, point.y - center.y)
+        }));
+        const minDistance = distances.reduce((min, point) => (point.value < min.value ? point : min), distances[0]);
+
+        boundary.setAttribute("r", minDistance.value.toFixed(2));
+
+        distances.forEach((point) => {
+          const line = makeSvg("line");
+          line.setAttribute("x1", center.x);
+          line.setAttribute("y1", center.y);
+          line.setAttribute("x2", point.x.toFixed(2));
+          line.setAttribute("y2", point.y.toFixed(2));
+          line.dataset.index = point.index;
+          linesLayer.appendChild(line);
+
+          const dot = makeSvg("circle");
+          dot.setAttribute("cx", point.x.toFixed(2));
+          dot.setAttribute("cy", point.y.toFixed(2));
+          dot.setAttribute("r", "8");
+          dot.dataset.index = point.index;
+          pointsLayer.appendChild(dot);
+
+          const barHeight = Math.max(8, point.value * 0.38);
+          const bar = makeSvg("rect");
+          bar.setAttribute("x", String(point.index * 28));
+          bar.setAttribute("y", String(72 - barHeight));
+          bar.setAttribute("width", "18");
+          bar.setAttribute("height", String(barHeight));
+          bar.setAttribute("rx", "4");
+          bar.dataset.index = point.index;
+          barsLayer.appendChild(bar);
+        });
+
+        const renderMicComputeStep = (time) => {
+          const active = Math.floor((time / 1100) % distances.length);
+          const currentMin = distances
+            .slice(0, active + 1)
+            .reduce((min, point) => (point.value < min.value ? point : min), distances[0]);
+
+          linesLayer.querySelectorAll("line").forEach((line) => {
+            const index = Number(line.dataset.index);
+            line.classList.toggle("is-active", index === active);
+            line.classList.toggle("is-min", index === currentMin.index);
+          });
+          pointsLayer.querySelectorAll("circle").forEach((dot) => {
+            const index = Number(dot.dataset.index);
+            dot.classList.toggle("is-active", index === active);
+            dot.classList.toggle("is-min", index === currentMin.index);
+          });
+          barsLayer.querySelectorAll("rect").forEach((bar) => {
+            const index = Number(bar.dataset.index);
+            bar.classList.toggle("is-active", index === active);
+            bar.classList.toggle("is-min", index === currentMin.index);
+          });
+
+          stepLabel.textContent = `checking: d${active + 1}`;
+          distanceValue.textContent = `dᵢ = ${distances[active].value.toFixed(1)} px`;
+          minValue.textContent = `current min = d${currentMin.index + 1} = ${currentMin.value.toFixed(1)} px`;
+          resultLabel.textContent =
+            currentMin.index === minDistance.index
+              ? "radius = nearest point"
+              : "keep scanning distances";
+        };
+
+        const animateMicCompute = (time) => {
+          if (document.body.classList.contains("is-deck-fullscreen")) {
+            renderMicComputeStep(time);
+          }
+
+          requestAnimationFrame(animateMicCompute);
+        };
+
+        renderMicComputeStep(0);
+        requestAnimationFrame(animateMicCompute);
+      }
+
+      const mzcComputeDemo = document.querySelector(".mzc-compute-demo");
+
+      if (mzcComputeDemo) {
+        const pointsLayer = mzcComputeDemo.querySelector(".mzc-compute-points");
+        const linesLayer = mzcComputeDemo.querySelector(".mzc-compute-lines");
+        const outerCircle = mzcComputeDemo.querySelector(".mzc-compute-outer");
+        const innerCircle = mzcComputeDemo.querySelector(".mzc-compute-inner");
+        const bracket = mzcComputeDemo.querySelector(".mzc-zone-bracket");
+        const zoneLabel = mzcComputeDemo.querySelector(".mzc-zone-label");
+        const rmaxLabel = mzcComputeDemo.querySelector(".mzc-compute-rmax");
+        const rminLabel = mzcComputeDemo.querySelector(".mzc-compute-rmin");
+        const errorLabel = mzcComputeDemo.querySelector(".mzc-compute-error");
+        const center = { x: 214, y: 214 };
+        const basePoints = [
+          { x: 332, y: 116, phase: 0.2 },
+          { x: 342, y: 218, phase: 1.1 },
+          { x: 288, y: 314, phase: 2.0 },
+          { x: 184, y: 320, phase: 2.8 },
+          { x: 110, y: 260, phase: 3.6 },
+          { x: 126, y: 158, phase: 4.4 },
+          { x: 214, y: 102, phase: 5.2 }
+        ];
+        const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
+        const pointNodes = basePoints.map((point, index) => {
+          const dot = makeSvg("circle");
+          dot.dataset.index = index;
+          pointsLayer.appendChild(dot);
+          return dot;
+        });
+
+        const renderMzcCompute = (time) => {
+          const points = basePoints.map((point) => ({
+            x: point.x + Math.cos(time * 0.001 + point.phase) * 5,
+            y: point.y + Math.sin(time * 0.0011 + point.phase) * 5
+          }));
+          const distances = points.map((point, index) => ({
+            ...point,
+            index,
+            value: Math.hypot(point.x - center.x, point.y - center.y)
+          }));
+          const min = distances.reduce((best, item) => (item.value < best.value ? item : best), distances[0]);
+          const max = distances.reduce((best, item) => (item.value > best.value ? item : best), distances[0]);
+
+          outerCircle.setAttribute("r", max.value.toFixed(2));
+          innerCircle.setAttribute("r", min.value.toFixed(2));
+          linesLayer.replaceChildren();
+
+          distances.forEach((point) => {
+            const isMin = point.index === min.index;
+            const isMax = point.index === max.index;
+            const dot = pointNodes[point.index];
+            dot.setAttribute("cx", point.x.toFixed(2));
+            dot.setAttribute("cy", point.y.toFixed(2));
+            dot.setAttribute("r", isMin || isMax ? "10" : "8");
+            dot.classList.toggle("is-min", isMin);
+            dot.classList.toggle("is-max", isMax);
+
+            if (isMin || isMax) {
+              const line = makeSvg("line");
+              line.setAttribute("x1", center.x);
+              line.setAttribute("y1", center.y);
+              line.setAttribute("x2", point.x.toFixed(2));
+              line.setAttribute("y2", point.y.toFixed(2));
+              line.classList.toggle("is-min", isMin);
+              line.classList.toggle("is-max", isMax);
+              linesLayer.appendChild(line);
+            }
+          });
+
+          const bracketX = center.x + max.value + 14;
+          const bracketY1 = center.y - max.value;
+          const bracketY2 = center.y - min.value;
+          bracket.setAttribute(
+            "d",
+            `M${bracketX - 9} ${bracketY1}h18M${bracketX} ${bracketY1}v${bracketY2 - bracketY1}M${bracketX - 9} ${bracketY2}h18`
+          );
+          zoneLabel.setAttribute("x", String(bracketX + 17));
+          zoneLabel.setAttribute("y", String((bracketY1 + bracketY2) / 2 + 6));
+
+          rmaxLabel.textContent = `rmax = ${max.value.toFixed(1)} px`;
+          rminLabel.textContent = `rmin = ${min.value.toFixed(1)} px`;
+          errorLabel.textContent = `E = ${(max.value - min.value).toFixed(1)} px`;
+        };
+
+        const animateMzcCompute = (time) => {
+          if (document.body.classList.contains("is-deck-fullscreen")) {
+            renderMzcCompute(time);
+          }
+
+          requestAnimationFrame(animateMzcCompute);
+        };
+
+        renderMzcCompute(0);
+        requestAnimationFrame(animateMzcCompute);
+      }
+    </script>
+  </body>
+</html>
