@@ -854,6 +854,7 @@
           <div class="themed-shell calibration-slide">
             <div class="calibration-title">
               <p class="themed-kicker">Measurement Calibration</p>
+              <h2>Previous method: known diameter scale</h2>
             </div>
 
             <div class="calibration-visual">
@@ -870,7 +871,7 @@
                 />
               </figure>
               <p class="calibration-caption">
-                Known diameter → pixel scale
+                Known pipe diameter -> pixel scale
               </p>
             </div>
 
@@ -892,9 +893,78 @@
               </div>
 
               <p class="calibration-note">
-                Reuse calibration only when camera distance, zoom, angle, and pipe
-                face plane stay fixed.
+                This method depends on keeping camera distance, zoom, angle, and pipe
+                face plane unchanged.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell tobias-calibration-slide">
+            <div class="tobias-calibration-title">
+              <p class="themed-kicker">New Approach</p>
+              <h2>Tobias calibration fixture</h2>
+            </div>
+
+            <div class="tobias-device-gallery" aria-label="Tobias fixture setup">
+              <figure class="tobias-device-card">
+                <img
+                  src="images/tobais_calibrat.png"
+                  alt="Full Tobias calibration device with fixed camera setup"
+                />
+                <figcaption>Full fixture setup</figcaption>
+              </figure>
+
+              <figure class="tobias-device-card">
+                <img
+                  src="images/tobias_calibrate2.png"
+                  alt="Close view of the fixed camera on the Tobias calibration fixture"
+                />
+                <figcaption>Camera mounted in a fixed position</figcaption>
+              </figure>
+
+              <figure class="tobias-device-card tobias-device-card-main">
+                <img
+                  src="images/tobias_device.png"
+                  alt="Pipe inserted inside the Tobias calibration fixture"
+                />
+                <figcaption>Pipe position fixed inside the device</figcaption>
+              </figure>
+            </div>
+
+            <div class="tobias-calibration-method">
+              <figure class="tobias-checker-card">
+                <div class="tobias-checker-visual">
+                  <img
+                    src="images/checker_calibrate.png"
+                    alt="Detected checkerboard calibration corners"
+                  />
+                  <div class="checker-calibration-demo" aria-hidden="true">
+                    <span class="checker-demo-point checker-demo-point-a"></span>
+                    <span class="checker-demo-point checker-demo-point-b"></span>
+                    <span class="checker-demo-line"></span>
+                    <span class="checker-demo-label checker-demo-label-mm">5 mm</span>
+                    <span class="checker-demo-label checker-demo-label-px">pixel spacing</span>
+                  </div>
+                </div>
+                <figcaption>Checkerboard corner detection</figcaption>
+              </figure>
+
+              <div class="tobias-formula-card">
+                <p class="calibration-formula-label">Camera Scale Calibration</p>
+                <p class="tobias-equation">
+                  Detected checkerboard spacing
+                  <span>-></span>
+                  pixel-to-mm scale
+                </p>
+                <p class="tobias-method-note">
+                  Checkerboard reference: each square is 5 x 5 mm.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -1982,10 +2052,11 @@
               <article class="limitation-card">
                 <img src="images/limit1.png" alt="Pipe calibration sensitivity caused by camera angle" />
                 <div class="limitation-copy">
-                  <h3>Calibration Dependency</h3>
-                  <p>Fixed camera setup required</p>
-                  <p>Distance, angle, and zoom affect scale</p>
-                  <strong>Impact: mm measurements may drift</strong>
+                  <h3>Fixture and Method Validation</h3>
+                  <p>Fixture improves repeatability</p>
+                  <p>Pipe centering and angle can still vary</p>
+                  <p>LSC/MCC/MIC threshold not yet defined</p>
+                  <strong>Impact: final acceptance needs validated rules</strong>
                 </div>
               </article>
 
@@ -2011,8 +2082,77 @@
             </div>
 
             <p class="limitations-takeaway">
-              Measurement accuracy depends on imaging conditions and 2D assumptions.
+              The fixture improves repeatability, but inspection confidence still depends on alignment,
+              image quality, and agreed OSTP validation thresholds.
             </p>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell method-spread-slide" data-method-spread-demo>
+            <div class="method-spread-title">
+              <p class="themed-kicker">Practical Constraints 2</p>
+              <h2>Undefined Deviation Thresholds for Method Agreement</h2>
+            </div>
+
+            <div class="method-spread-board">
+              <div class="method-spread-visual" aria-label="Interactive method spread demo">
+                <svg class="method-spread-svg" viewBox="0 0 520 360" role="img" aria-labelledby="method-spread-title method-spread-desc">
+                  <title id="method-spread-title">Method spread demo</title>
+                  <desc id="method-spread-desc">Pipe edge points, LSC, MCC, and MIC circles separate as surface irregularity increases.</desc>
+                  <defs>
+                    <filter id="methodSpreadGlow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feGaussianBlur stdDeviation="4" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  <circle class="method-spread-zone method-spread-zone-reference" cx="260" cy="176" r="112" />
+                  <circle class="method-spread-zone method-spread-zone-lsc" cx="260" cy="176" r="112" />
+                  <circle class="method-spread-zone method-spread-zone-mcc" cx="260" cy="176" r="118" />
+                  <circle class="method-spread-zone method-spread-zone-mic" cx="260" cy="176" r="106" />
+                  <path class="method-spread-pipe-edge" d="" />
+                  <g class="method-spread-points"></g>
+                  <line class="method-spread-gap-line" x1="260" y1="176" x2="378" y2="176" />
+                  <text class="method-spread-label method-spread-label-reference" x="386" y="132">calibrated reference</text>
+                  <text class="method-spread-label method-spread-label-lsc" x="386" y="158">LSC</text>
+                  <text class="method-spread-label method-spread-label-mcc" x="386" y="184">MCC outer envelope</text>
+                  <text class="method-spread-label method-spread-label-mic" x="386" y="210">MIC inner clearance</text>
+                  <text class="method-spread-label method-spread-label-gap" x="270" y="158">deviation band</text>
+                </svg>
+                <p class="method-spread-visual-caption">Mathematical signal visualization</p>
+              </div>
+
+              <div class="method-spread-panel">
+                <div class="method-spread-control">
+                  <label for="method-spread-range">Deviation from reference</label>
+                  <input id="method-spread-range" class="method-spread-range" type="range" min="0" max="10" value="3" step="1" tabindex="-1" />
+                </div>
+
+                <div class="method-spread-metrics">
+                  <p><strong>Calibrated reference diameter</strong><span data-reference-value>100.00 mm</span></p>
+                  <p><strong>ΔLSC from reference</strong><span data-lsc-delta>+0.36 mm</span></p>
+                  <p><strong>ΔMCC outer envelope</strong><span data-mcc-delta>+1.65 mm</span></p>
+                  <p><strong>ΔMIC inner clearance</strong><span data-mic-delta>-1.35 mm</span></p>
+                  <p><strong>MCC - MIC spread</strong><span data-spread-value>3.00 mm (3.0%)</span></p>
+                </div>
+
+                <div class="method-spread-status" data-spread-status>
+                  Within review band
+                </div>
+
+                <p class="method-spread-note">
+                  Large method deviation may indicate deformation, rough edge, tilt, misalignment,
+                  lighting issue, or segmentation noise. OSTP metrology should define acceptable
+                  positive and negative thresholds.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -2040,10 +2180,10 @@
               <article class="future-card">
                 <img src="images/future2.png" alt="Industrial 3D camera inspection setup" />
                 <div class="future-copy">
-                  <h3>3D Camera-Based Inspection System</h3>
-                  <p>Fixed camera and controlled setup</p>
-                  <p>Stable repeatable measurement pipeline</p>
-                  <strong>Goal: machine-level inspection</strong>
+                  <h3>2D Inspection Rule Validation</h3>
+                  <p>Define method thresholds for ISO values</p>
+                  <p>Align 2D inspection rules with OSTP standards</p>
+                  <strong>Goal: trusted 2D inspection pass/fail</strong>
                 </div>
               </article>
 
@@ -2242,6 +2382,113 @@
       document.addEventListener("fullscreenchange", updateFullscreenState);
       window.addEventListener("resize", updateFullscreenState);
       updateFullscreenState();
+
+      document.querySelectorAll("[data-method-spread-demo]").forEach((demo) => {
+        const range = demo.querySelector(".method-spread-range");
+        const edge = demo.querySelector(".method-spread-pipe-edge");
+        const pointLayer = demo.querySelector(".method-spread-points");
+        const referenceCircle = demo.querySelector(".method-spread-zone-reference");
+        const lscCircle = demo.querySelector(".method-spread-zone-lsc");
+        const mccCircle = demo.querySelector(".method-spread-zone-mcc");
+        const micCircle = demo.querySelector(".method-spread-zone-mic");
+        const gapLine = demo.querySelector(".method-spread-gap-line");
+        const referenceValue = demo.querySelector("[data-reference-value]");
+        const lscDelta = demo.querySelector("[data-lsc-delta]");
+        const mccDelta = demo.querySelector("[data-mcc-delta]");
+        const micDelta = demo.querySelector("[data-mic-delta]");
+        const spreadValue = demo.querySelector("[data-spread-value]");
+        const status = demo.querySelector("[data-spread-status]");
+        const center = { x: 260, y: 176 };
+        const baseRadius = 112;
+        const pointCount = 96;
+
+        const formatMm = (value) => `${value.toFixed(2)} mm`;
+        const formatDelta = (value) => `${value >= 0 ? "+" : ""}${value.toFixed(2)} mm`;
+
+        const buildEdgePath = (spread) => {
+          const roughness = spread / 10;
+          const points = [];
+
+          for (let index = 0; index < pointCount; index += 1) {
+            const angle = (Math.PI * 2 * index) / pointCount;
+            const wave =
+              Math.sin(angle * 3.0 + 0.35) * 2.0 +
+              Math.sin(angle * 7.0 - 0.9) * 1.3 +
+              Math.sin(angle * 13.0 + 1.7) * 0.8;
+            const dent =
+              Math.exp(-Math.pow(angle - 1.0, 2) / 0.035) * 13.0 -
+              Math.exp(-Math.pow(angle - 3.65, 2) / 0.05) * 10.0 +
+              Math.exp(-Math.pow(angle - 5.1, 2) / 0.045) * 8.0;
+            const radius = baseRadius + roughness * (wave + dent);
+            points.push({
+              x: center.x + Math.cos(angle) * radius,
+              y: center.y + Math.sin(angle) * radius,
+            });
+          }
+
+          return `${points.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`).join(" ")} Z`;
+        };
+
+        const updateDemo = () => {
+          const spread = Number(range.value);
+          const referenceDia = 100.0;
+          const lscDeviation = spread * 0.12;
+          const mccDeviation = spread * 0.55;
+          const micDeviation = -spread * 0.45;
+          const lscRadius = baseRadius + spread * 0.25;
+          const mccRadius = baseRadius + spread * 2.3;
+          const micRadius = baseRadius - spread * 1.9;
+
+          edge.setAttribute("d", buildEdgePath(spread));
+          referenceCircle.setAttribute("r", baseRadius.toFixed(2));
+          lscCircle.setAttribute("r", lscRadius.toFixed(2));
+          mccCircle.setAttribute("r", mccRadius.toFixed(2));
+          micCircle.setAttribute("r", micRadius.toFixed(2));
+          gapLine.setAttribute("x2", (center.x + mccRadius).toFixed(2));
+
+          pointLayer.innerHTML = "";
+          for (let index = 0; index < 28; index += 1) {
+            const angle = (Math.PI * 2 * index) / 28;
+            const radius = baseRadius + (spread / 10) * (
+              Math.sin(angle * 3.0 + 0.35) * 2.0 +
+              Math.sin(angle * 7.0 - 0.9) * 1.3 +
+              Math.sin(angle * 13.0 + 1.7) * 0.8 +
+              Math.exp(-Math.pow(angle - 1.0, 2) / 0.035) * 13.0 -
+              Math.exp(-Math.pow(angle - 3.65, 2) / 0.05) * 10.0 +
+              Math.exp(-Math.pow(angle - 5.1, 2) / 0.045) * 8.0
+            );
+            const point = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            point.setAttribute("cx", (center.x + Math.cos(angle) * radius).toFixed(2));
+            point.setAttribute("cy", (center.y + Math.sin(angle) * radius).toFixed(2));
+            point.setAttribute("r", spread > 6 ? "3.5" : "3");
+            pointLayer.appendChild(point);
+          }
+
+          referenceValue.textContent = formatMm(referenceDia);
+          lscDelta.textContent = formatDelta(lscDeviation);
+          mccDelta.textContent = formatDelta(mccDeviation);
+          micDelta.textContent = formatDelta(micDeviation);
+          spreadValue.textContent = `${formatMm(mccDeviation - micDeviation)} (${spread.toFixed(1)}%)`;
+
+          status.classList.remove("is-warning", "is-review");
+          if (spread <= 2) {
+            status.textContent = "Within review band";
+          } else if (spread <= 5) {
+            status.classList.add("is-warning");
+            status.textContent = "Warning band: OSTP threshold needed";
+          } else {
+            status.classList.add("is-review");
+            status.textContent = "High deviation: manual review before pass/fail";
+          }
+        };
+
+        range.addEventListener("input", updateDemo);
+        range.addEventListener("keydown", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+        });
+        updateDemo();
+      });
 
       const lscDemo = document.querySelector(".lsc-demo");
 
