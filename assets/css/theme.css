@@ -2343,14 +2343,11 @@ body.is-deck-fullscreen .mzc-compute-demo {
 }
 
 .checker-calibration-demo {
-  display: none;
-}
-
-body.is-deck-fullscreen .checker-calibration-demo {
   position: absolute;
   inset: 0;
   display: block;
   pointer-events: none;
+  animation: checkerMeasureCells 19.2s steps(1, end) infinite;
 }
 
 .checker-demo-point,
@@ -2470,6 +2467,25 @@ body.is-deck-fullscreen .checker-calibration-demo {
   100% {
     opacity: 0;
     transform: translateY(-3px);
+  }
+}
+
+@keyframes checkerMeasureCells {
+  0%,
+  24.99% {
+    transform: translate(-12%, 12%);
+  }
+  25%,
+  49.99% {
+    transform: translate(-4%, 4%);
+  }
+  50%,
+  74.99% {
+    transform: translate(5%, -5%);
+  }
+  75%,
+  100% {
+    transform: translate(13%, -13%);
   }
 }
 
@@ -4095,6 +4111,25 @@ body.is-image-lightbox-open {
   background: rgba(255, 253, 250, 0.98);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
   touch-action: none;
+}
+
+.image-lightbox-stage {
+  position: relative;
+  display: flex;
+  max-width: min(92vw, 1500px);
+  max-height: min(82vh, 82dvh);
+}
+
+.image-lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.image-lightbox-overlay .checker-calibration-demo {
+  display: block;
 }
 
 .image-lightbox-close {
