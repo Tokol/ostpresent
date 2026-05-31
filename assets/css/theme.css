@@ -4059,9 +4059,15 @@ body.is-deck-fullscreen .checker-calibration-demo {
   outline-offset: 4px;
 }
 
+body.is-image-lightbox-open {
+  overflow: hidden;
+}
+
 .image-lightbox {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 1000;
   display: none;
   align-items: center;
@@ -4070,6 +4076,8 @@ body.is-deck-fullscreen .checker-calibration-demo {
   box-sizing: border-box;
   background: rgba(20, 24, 31, 0.84);
   backdrop-filter: blur(10px);
+  overscroll-behavior: contain;
+  touch-action: none;
 }
 
 .image-lightbox.is-open {
@@ -4078,12 +4086,15 @@ body.is-deck-fullscreen .checker-calibration-demo {
 
 .image-lightbox-content {
   display: block;
+  width: auto;
+  height: auto;
   max-width: min(92vw, 1500px);
-  max-height: 82vh;
+  max-height: min(82vh, 82dvh);
   border-radius: 16px;
   object-fit: contain;
   background: rgba(255, 253, 250, 0.98);
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+  touch-action: none;
 }
 
 .image-lightbox-close {

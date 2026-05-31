@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
     />
     <link rel="icon" type="image/png" href="novia_uas.png" />
-    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/theme.css?v=20260531-2" />
   </head>
   <body>
     <div class="reveal">
@@ -2437,24 +2437,34 @@
       const imageLightboxContent = imageLightbox.querySelector(".image-lightbox-content");
       const imageLightboxCaption = imageLightbox.querySelector(".image-lightbox-caption");
       const imageLightboxClose = imageLightbox.querySelector(".image-lightbox-close");
+      let imageLightboxTrigger = null;
       const zoomableImages = document.querySelectorAll(
         '.slides img:not(.hero-corner-logo):not(.conclusion-card-logo):not([src="ostp_logo.png"])'
       );
 
       const closeImageLightbox = () => {
+        if (!imageLightbox.classList.contains("is-open")) {
+          return;
+        }
+
         imageLightbox.classList.remove("is-open");
         imageLightbox.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("is-image-lightbox-open");
         imageLightboxContent.removeAttribute("src");
         imageLightboxContent.alt = "";
         imageLightboxCaption.textContent = "";
+        imageLightboxTrigger?.focus();
+        imageLightboxTrigger = null;
       };
 
       const openImageLightbox = (image) => {
+        imageLightboxTrigger = image;
         imageLightboxContent.src = image.currentSrc || image.src;
         imageLightboxContent.alt = image.alt || "Enlarged slide image";
         imageLightboxCaption.textContent = image.alt || "";
         imageLightbox.classList.add("is-open");
         imageLightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("is-image-lightbox-open");
         imageLightboxClose.focus();
       };
 
@@ -2463,16 +2473,25 @@
         image.setAttribute("tabindex", "0");
         image.setAttribute("role", "button");
         image.setAttribute("aria-label", `Zoom image: ${image.alt || "slide visual"}`);
-        image.addEventListener("click", () => openImageLightbox(image));
+        image.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          openImageLightbox(image);
+        });
         image.addEventListener("keydown", (event) => {
           if (event.key === "Enter" || event.key === " ") {
             event.preventDefault();
+            event.stopPropagation();
             openImageLightbox(image);
           }
         });
       });
 
-      imageLightboxClose.addEventListener("click", closeImageLightbox);
+      imageLightboxClose.addEventListener("click", (event) => {
+        event.stopPropagation();
+        closeImageLightbox();
+      });
+      imageLightboxContent.addEventListener("click", (event) => event.stopPropagation());
       imageLightbox.addEventListener("click", (event) => {
         if (event.target === imageLightbox) {
           closeImageLightbox();
