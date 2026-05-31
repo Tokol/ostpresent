@@ -2405,11 +2405,6 @@ body.is-deck-fullscreen .mzc-compute-demo {
   animation: checkerLabelReveal 4.8s ease-in-out infinite;
 }
 
-.checker-demo-label-mm {
-  left: 46%;
-  top: 35%;
-}
-
 .checker-demo-label-px {
   left: 43%;
   top: 61%;
