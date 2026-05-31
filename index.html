@@ -55,6 +55,11 @@
                   alt="Industrial pipe cross-sections used for roundness validation"
                 />
               </div>
+              <div class="hero-presenters" aria-label="Presenters">
+                <p>Tobias Ekfors</p>
+                <p>Tobias Holmqvist</p>
+                <p>Suresh Lama</p>
+              </div>
             </div>
           </div>
         </section>
@@ -3102,10 +3107,49 @@
           return point.matrixTransform(svg.getScreenCTM().inverse());
         };
         const findZone = () => {
-          const center = points.reduce(
+          let center = points.reduce(
             (sum, point) => ({ x: sum.x + point.x / points.length, y: sum.y + point.y / points.length }),
             { x: 0, y: 0 }
           );
+          const scoreAt = (candidate) => {
+            const distances = points.map((point) => Math.hypot(point.x - candidate.x, point.y - candidate.y));
+            return Math.max(...distances) - Math.min(...distances);
+          };
+          const directions = [
+            [1, 0],
+            [-1, 0],
+            [0, 1],
+            [0, -1],
+            [1, 1],
+            [1, -1],
+            [-1, 1],
+            [-1, -1]
+          ];
+          let bestScore = scoreAt(center);
+          let step = 72;
+
+          while (step > 0.35) {
+            let improved = false;
+
+            directions.forEach(([dx, dy]) => {
+              const candidate = {
+                x: clamp(center.x + dx * step, bounds.minX, bounds.maxX),
+                y: clamp(center.y + dy * step, bounds.minY, bounds.maxY)
+              };
+              const candidateScore = scoreAt(candidate);
+
+              if (candidateScore < bestScore) {
+                center = candidate;
+                bestScore = candidateScore;
+                improved = true;
+              }
+            });
+
+            if (!improved) {
+              step *= 0.5;
+            }
+          }
+
           const distances = points.map((point, index) => ({
             index,
             value: Math.hypot(point.x - center.x, point.y - center.y)
@@ -3211,13 +3255,13 @@
         const center = { x: 214, y: 214 };
         const radius = 114;
         const computePoints = [
-          { x: 330, y: 110 },
-          { x: 356, y: 205 },
-          { x: 312, y: 310 },
-          { x: 205, y: 338 },
-          { x: 107, y: 278 },
-          { x: 96, y: 172 },
-          { x: 176, y: 92 }
+          { x: 306, y: 131 },
+          { x: 320, y: 207 },
+          { x: 300, y: 299 },
+          { x: 206, y: 322 },
+          { x: 112, y: 275 },
+          { x: 117, y: 179 },
+          { x: 180, y: 103 }
         ];
 
         const makeSvg = (name) => document.createElementNS("http://www.w3.org/2000/svg", name);
@@ -3513,12 +3557,14 @@
         const linesLayer = mzcComputeDemo.querySelector(".mzc-compute-lines");
         const outerCircle = mzcComputeDemo.querySelector(".mzc-compute-outer");
         const innerCircle = mzcComputeDemo.querySelector(".mzc-compute-inner");
+        const centerMarker = mzcComputeDemo.querySelector(".mzc-compute-center");
+        const centerLabel = mzcComputeDemo.querySelector(".mzc-compute-center-label");
         const bracket = mzcComputeDemo.querySelector(".mzc-zone-bracket");
         const zoneLabel = mzcComputeDemo.querySelector(".mzc-zone-label");
         const rmaxLabel = mzcComputeDemo.querySelector(".mzc-compute-rmax");
         const rminLabel = mzcComputeDemo.querySelector(".mzc-compute-rmin");
         const errorLabel = mzcComputeDemo.querySelector(".mzc-compute-error");
-        const center = { x: 214, y: 214 };
+        const initialCenter = { x: 214, y: 214 };
         const basePoints = [
           { x: 332, y: 116, phase: 0.2 },
           { x: 342, y: 218, phase: 1.1 },
@@ -3541,6 +3587,43 @@
             x: point.x + Math.cos(time * 0.001 + point.phase) * 5,
             y: point.y + Math.sin(time * 0.0011 + point.phase) * 5
           }));
+          const scoreAt = (candidate) => {
+            const values = points.map((point) => Math.hypot(point.x - candidate.x, point.y - candidate.y));
+            return Math.max(...values) - Math.min(...values);
+          };
+          const directions = [
+            [1, 0],
+            [-1, 0],
+            [0, 1],
+            [0, -1],
+            [1, 1],
+            [1, -1],
+            [-1, 1],
+            [-1, -1]
+          ];
+          let center = { ...initialCenter };
+          let bestScore = scoreAt(center);
+          let step = 28;
+
+          while (step > 0.35) {
+            let improved = false;
+
+            directions.forEach(([dx, dy]) => {
+              const candidate = { x: center.x + dx * step, y: center.y + dy * step };
+              const candidateScore = scoreAt(candidate);
+
+              if (candidateScore < bestScore) {
+                center = candidate;
+                bestScore = candidateScore;
+                improved = true;
+              }
+            });
+
+            if (!improved) {
+              step *= 0.5;
+            }
+          }
+
           const distances = points.map((point, index) => ({
             ...point,
             index,
@@ -3551,6 +3634,14 @@
 
           outerCircle.setAttribute("r", max.value.toFixed(2));
           innerCircle.setAttribute("r", min.value.toFixed(2));
+          outerCircle.setAttribute("cx", center.x.toFixed(2));
+          outerCircle.setAttribute("cy", center.y.toFixed(2));
+          innerCircle.setAttribute("cx", center.x.toFixed(2));
+          innerCircle.setAttribute("cy", center.y.toFixed(2));
+          centerMarker.setAttribute("cx", center.x.toFixed(2));
+          centerMarker.setAttribute("cy", center.y.toFixed(2));
+          centerLabel.setAttribute("x", (center.x + 12).toFixed(2));
+          centerLabel.setAttribute("y", (center.y - 6).toFixed(2));
           linesLayer.replaceChildren();
 
           distances.forEach((point) => {
