@@ -2467,18 +2467,14 @@ body.is-deck-fullscreen .mzc-compute-demo {
 
 @keyframes checkerMeasureCells {
   0%,
-  24.99% {
-    transform: translate(-12%, 12%);
-  }
-  25%,
-  49.99% {
+  33.32% {
     transform: translate(-4%, 4%);
   }
-  50%,
-  74.99% {
+  33.33%,
+  66.65% {
     transform: translate(5%, -5%);
   }
-  75%,
+  66.66%,
   100% {
     transform: translate(13%, -13%);
   }
