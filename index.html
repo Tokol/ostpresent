@@ -2410,6 +2410,18 @@
       </div>
     </div>
 
+    <div
+      class="image-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-label="Enlarged slide image"
+    >
+      <button class="image-lightbox-close" type="button" aria-label="Close enlarged image">&times;</button>
+      <img class="image-lightbox-content" src="" alt="" />
+      <p class="image-lightbox-caption"></p>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
     <script>
       Reveal.initialize({
@@ -2419,6 +2431,57 @@
         center: false,
         transition: "slide",
         backgroundTransition: "fade"
+      });
+
+      const imageLightbox = document.querySelector(".image-lightbox");
+      const imageLightboxContent = imageLightbox.querySelector(".image-lightbox-content");
+      const imageLightboxCaption = imageLightbox.querySelector(".image-lightbox-caption");
+      const imageLightboxClose = imageLightbox.querySelector(".image-lightbox-close");
+      const zoomableImages = document.querySelectorAll(
+        '.slides img:not(.hero-corner-logo):not(.conclusion-card-logo):not([src="ostp_logo.png"])'
+      );
+
+      const closeImageLightbox = () => {
+        imageLightbox.classList.remove("is-open");
+        imageLightbox.setAttribute("aria-hidden", "true");
+        imageLightboxContent.removeAttribute("src");
+        imageLightboxContent.alt = "";
+        imageLightboxCaption.textContent = "";
+      };
+
+      const openImageLightbox = (image) => {
+        imageLightboxContent.src = image.currentSrc || image.src;
+        imageLightboxContent.alt = image.alt || "Enlarged slide image";
+        imageLightboxCaption.textContent = image.alt || "";
+        imageLightbox.classList.add("is-open");
+        imageLightbox.setAttribute("aria-hidden", "false");
+        imageLightboxClose.focus();
+      };
+
+      zoomableImages.forEach((image) => {
+        image.classList.add("deck-zoomable-image");
+        image.setAttribute("tabindex", "0");
+        image.setAttribute("role", "button");
+        image.setAttribute("aria-label", `Zoom image: ${image.alt || "slide visual"}`);
+        image.addEventListener("click", () => openImageLightbox(image));
+        image.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openImageLightbox(image);
+          }
+        });
+      });
+
+      imageLightboxClose.addEventListener("click", closeImageLightbox);
+      imageLightbox.addEventListener("click", (event) => {
+        if (event.target === imageLightbox) {
+          closeImageLightbox();
+        }
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && imageLightbox.classList.contains("is-open")) {
+          closeImageLightbox();
+        }
       });
 
       const updateFullscreenState = () => {
