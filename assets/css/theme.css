@@ -374,6 +374,557 @@ body {
   margin-top: 8px;
 }
 
+.machine-vision-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(500px, 1.22fr);
+  grid-template-areas: "copy visual";
+  gap: 30px;
+  align-items: center;
+}
+
+.machine-vision-copy {
+  grid-area: copy;
+}
+
+.machine-vision-copy .themed-kicker {
+  margin-bottom: 18px;
+}
+
+.machine-vision-copy h2 {
+  max-width: 15ch;
+  margin-bottom: 18px;
+  font-size: clamp(1.86rem, 2.12vw, 2.54rem);
+}
+
+.machine-vision-copy ul {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding-left: 1.08em;
+}
+
+.machine-vision-copy li {
+  color: #5d5651;
+  font-size: 0.84rem;
+  font-weight: 760;
+  line-height: 1.32;
+}
+
+.machine-vision-copy li::marker {
+  color: var(--accent);
+}
+
+.machine-vision-visual {
+  grid-area: visual;
+  margin: 0;
+  padding: 16px;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 238, 232, 0.96));
+  border: 1px solid rgba(223, 214, 206, 0.96);
+  box-shadow:
+    0 14px 28px rgba(48, 37, 29, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.machine-vision-visual img {
+  display: block;
+  width: 100%;
+  height: 314px;
+  border-radius: 18px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.lighting-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(500px, 1.18fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.lighting-copy .themed-kicker {
+  margin-bottom: 16px;
+}
+
+.lighting-copy h2 {
+  max-width: 12ch;
+  margin-bottom: 16px;
+  font-size: clamp(1.86rem, 2.12vw, 2.54rem);
+}
+
+.lighting-copy > ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.08em;
+}
+
+.lighting-copy li {
+  color: #5d5651;
+  font-size: 0.73rem;
+  font-weight: 760;
+  line-height: 1.2;
+}
+
+.lighting-copy li::marker {
+  color: var(--accent);
+}
+
+.lighting-copy li ul {
+  display: grid;
+  gap: 2px;
+  margin: 4px 0 0;
+  padding-left: 1.2em;
+}
+
+.lighting-copy strong {
+  color: #3f3a35;
+  font-weight: 950;
+}
+
+.lighting-visual {
+  margin: 0;
+  padding: 13px 13px 10px;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 238, 232, 0.96));
+  border: 1px solid rgba(223, 214, 206, 0.96);
+  box-shadow:
+    0 14px 28px rgba(48, 37, 29, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.lighting-svg {
+  display: block;
+  width: 100%;
+  height: 292px;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 47% 56%, rgba(210, 106, 46, 0.11), transparent 28%),
+    linear-gradient(145deg, rgba(252, 249, 245, 0.99), rgba(240, 233, 225, 0.92));
+}
+
+.lighting-visual figcaption {
+  margin: 8px 5px 0;
+  color: #5d5651;
+  font-size: 0.66rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.lighting-reference {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  margin: 9px 0 0;
+  padding: 7px;
+  border-radius: 14px;
+  background: rgba(255, 253, 250, 0.82);
+  border: 1px solid rgba(223, 214, 206, 0.86);
+}
+
+.lighting-reference img {
+  display: block;
+  width: 86px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lighting-reference figcaption {
+  margin: 0;
+  color: #3f3a35;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.lighting-led rect {
+  fill: rgba(255, 253, 250, 0.98);
+  stroke: rgba(210, 106, 46, 0.5);
+  stroke-width: 3;
+}
+
+.lighting-led circle {
+  fill: #ffd55f;
+  stroke: #d26a2e;
+  stroke-width: 4;
+  filter: url("#lightingGlow");
+  animation: lightingLedPulse 2.4s ease-in-out infinite;
+}
+
+.lighting-led path {
+  fill: none;
+  stroke: #d26a2e;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.lighting-led text,
+.lighting-camera text,
+.lighting-pipe text {
+  fill: #5d5651;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.lighting-camera rect {
+  fill: #314055;
+  stroke: rgba(23, 34, 52, 0.35);
+  stroke-width: 3;
+}
+
+.lighting-camera circle:first-of-type {
+  fill: #182131;
+  stroke: #96aabd;
+  stroke-width: 4;
+}
+
+.lighting-camera circle:last-of-type {
+  fill: #1f6feb;
+  filter: url("#lightingGlow");
+}
+
+.lighting-camera text {
+  fill: #314055;
+}
+
+.lighting-pipe path:first-child {
+  fill: url("#lightingPipeMetal");
+  stroke: #314055;
+  stroke-width: 3;
+}
+
+.lighting-pipe-highlight {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.88);
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+
+.lighting-ray {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 6;
+  stroke-dasharray: 10 12;
+}
+
+.lighting-ray-incoming {
+  stroke: #d26a2e;
+  marker-end: url("#lightingArrowWarm");
+}
+
+.lighting-ray-reflected {
+  stroke: #1f6feb;
+  marker-end: url("#lightingArrowBlue");
+}
+
+.lighting-ray-transmitted {
+  stroke: #1c7e44;
+  marker-end: url("#lightingArrowGreen");
+}
+
+.lighting-ray-absorbed {
+  stroke: url("#lightingAbsorbFade");
+  marker-end: url("#lightingArrowWarm");
+}
+
+.lighting-pulse circle {
+  filter: url("#lightingGlow");
+}
+
+.lighting-pulse-incoming {
+  offset-path: path("M160 111L280 238");
+  animation: lightingPulseTravel 2.4s linear infinite;
+}
+
+.lighting-pulse-incoming circle,
+.lighting-pulse-absorbed circle {
+  fill: #d26a2e;
+}
+
+.lighting-pulse-reflected {
+  offset-path: path("M280 238L430 119");
+  animation: lightingPulseTravel 2.4s linear 0.85s infinite;
+}
+
+.lighting-pulse-reflected circle {
+  fill: #1f6feb;
+}
+
+.lighting-pulse-transmitted {
+  offset-path: path("M280 238L317 326");
+  animation: lightingPulseTravel 2.4s linear 0.85s infinite;
+}
+
+.lighting-pulse-transmitted circle {
+  fill: #1c7e44;
+}
+
+.lighting-pulse-absorbed {
+  offset-path: path("M280 238L382 274");
+  animation: lightingPulseAbsorb 2.4s linear 0.85s infinite;
+}
+
+.lighting-label text {
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: 0.06em;
+}
+
+.lighting-label-reflected text {
+  fill: #1f6feb;
+}
+
+.lighting-label-transmitted text {
+  fill: #1c7e44;
+}
+
+.lighting-label-absorbed text {
+  fill: #b85e0b;
+}
+
+.lighting-equation rect {
+  fill: rgba(255, 253, 250, 0.9);
+  stroke: rgba(177, 42, 36, 0.18);
+  stroke-width: 2;
+}
+
+.lighting-equation text {
+  fill: var(--accent);
+  font-size: 17px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-anchor: middle;
+}
+
+@keyframes lightingLedPulse {
+  0%,
+  100% {
+    opacity: 0.76;
+    transform: scale(0.92);
+    transform-origin: 143px 100px;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+    transform-origin: 143px 100px;
+  }
+}
+
+@keyframes lightingPulseTravel {
+  0% {
+    opacity: 0;
+    offset-distance: 0%;
+  }
+  12%,
+  82% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
+@keyframes lightingPulseAbsorb {
+  0% {
+    opacity: 0;
+    offset-distance: 0%;
+  }
+  22% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    offset-distance: 100%;
+  }
+}
+
+.optics-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 0.84fr) minmax(500px, 1.16fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.optics-copy .themed-kicker {
+  margin-bottom: 16px;
+}
+
+.optics-copy h2 {
+  max-width: 12ch;
+  margin-bottom: 16px;
+  font-size: clamp(1.86rem, 2.12vw, 2.54rem);
+}
+
+.optics-copy > ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.08em;
+}
+
+.optics-copy li {
+  color: #5d5651;
+  font-size: 0.73rem;
+  font-weight: 760;
+  line-height: 1.2;
+}
+
+.optics-copy li::marker {
+  color: var(--accent);
+}
+
+.optics-copy li ul {
+  display: grid;
+  gap: 2px;
+  margin: 4px 0 0;
+  padding-left: 1.2em;
+}
+
+.optics-visual {
+  margin: 0;
+  padding: 13px 13px 10px;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 238, 232, 0.96));
+  border: 1px solid rgba(223, 214, 206, 0.96);
+  box-shadow:
+    0 14px 28px rgba(48, 37, 29, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.optics-photo {
+  display: block;
+  width: 100%;
+  height: 172px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.optics-coverage-demo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.optics-state {
+  position: relative;
+  min-width: 0;
+  padding: 8px 7px 7px;
+  border-radius: 14px;
+  background: rgba(255, 253, 250, 0.86);
+  border: 1px solid rgba(223, 214, 206, 0.86);
+  box-shadow: 0 6px 14px rgba(48, 37, 29, 0.045);
+  animation: opticsStatePulse 7.2s ease-in-out infinite;
+}
+
+.optics-state p {
+  margin: 0 0 7px;
+  color: #3f3a35;
+  font-size: 0.63rem;
+  font-weight: 950;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.optics-state small {
+  display: block;
+  margin-top: 5px;
+  color: var(--accent);
+  font-size: 0.58rem;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.optics-state-undersized {
+  animation-delay: 2.4s;
+}
+
+.optics-state-oversized {
+  animation-delay: 4.8s;
+}
+
+.optics-sensor {
+  position: relative;
+  width: 106px;
+  height: 66px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 3px solid #314055;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(31, 111, 235, 0.16), rgba(177, 42, 36, 0.12)),
+    #f8f6f1;
+}
+
+.optics-lens-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  border: 4px solid var(--accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 0 999px rgba(23, 34, 52, 0.05),
+    0 0 14px rgba(177, 42, 36, 0.2);
+}
+
+.optics-state-correct .optics-lens-circle {
+  width: 124px;
+  height: 124px;
+}
+
+.optics-state-undersized .optics-lens-circle {
+  width: 76px;
+  height: 76px;
+  box-shadow:
+    0 0 0 999px rgba(23, 34, 52, 0.68),
+    0 0 14px rgba(177, 42, 36, 0.2);
+}
+
+.optics-state-oversized .optics-lens-circle {
+  width: 166px;
+  height: 166px;
+}
+
+.optics-visual figcaption {
+  margin: 8px 5px 0;
+  color: #5d5651;
+  font-size: 0.66rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+@keyframes opticsStatePulse {
+  0%,
+  22%,
+  100% {
+    border-color: rgba(223, 214, 206, 0.86);
+    transform: translateY(0);
+  }
+  11% {
+    border-color: rgba(177, 42, 36, 0.62);
+    transform: translateY(-5px);
+  }
+}
+
 .circle-slide {
   display: grid;
   grid-template-columns: minmax(0, 0.74fr) minmax(430px, 1fr);
@@ -4186,6 +4737,29 @@ body.is-image-lightbox-open {
 }
 
 @media (max-width: 900px) {
+  .machine-vision-slide {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "visual";
+  }
+
+  .machine-vision-visual img {
+    height: 240px;
+  }
+
+  .lighting-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .lighting-svg {
+    height: 280px;
+  }
+
+  .optics-slide {
+    grid-template-columns: 1fr;
+  }
+
   .reveal section {
     padding: 36px 28px 108px;
   }

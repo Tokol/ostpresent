@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
     />
     <link rel="icon" type="image/png" href="novia_uas.png" />
-    <link rel="stylesheet" href="assets/css/theme.css?v=20260531-3" />
+    <link rel="stylesheet" href="assets/css/theme.css?v=20260601-4" />
   </head>
   <body>
     <div class="reveal">
@@ -61,6 +61,249 @@
                 <p>Suresh Lama</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell machine-vision-slide">
+            <div class="machine-vision-copy">
+              <p class="themed-kicker">Visual Inspection</p>
+              <h2>Machine Vision</h2>
+              <ul>
+                <li>Originates from early 1980s industrial automation</li>
+                <li>Now considered a subfield of AI</li>
+                <li>Goal: enable machines to reproduce and surpass human vision</li>
+                <li>Uses cameras and sensors to capture continuous image data</li>
+                <li>Detects defects, anomalies, text, barcodes, and patterns</li>
+                <li>Enhances process quality, safety, and cost-efficiency</li>
+                <li>Requires controlled lighting and stable camera positioning</li>
+              </ul>
+            </div>
+            <figure class="machine-vision-visual">
+              <img
+                src="images/machinevision.png"
+                alt="Machine vision system with camera, illumination, conveyor, object detection, and image processing software"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell machine-vision-slide">
+            <div class="machine-vision-copy">
+              <p class="themed-kicker">Visual Intelligence</p>
+              <h2>Computer Vision</h2>
+              <ul>
+                <li>Focuses on teaching computers to interpret and understand visual data</li>
+                <li>Relies on AI models trained on massive image datasets</li>
+                <li>Handles uncontrolled environments with inconsistent lighting and angles</li>
+                <li>More flexible and widely applicable than rule-based machine vision</li>
+                <li>Learns patterns through AI rather than fixed inspection logic</li>
+              </ul>
+            </div>
+            <figure class="machine-vision-visual">
+              <img
+                src="images/machinevision2.png"
+                alt="Computer vision object detection identifying pedestrians, vehicles, cyclists, and traffic lights"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell lighting-slide">
+            <div class="lighting-copy">
+              <p class="themed-kicker">Imaging Conditions</p>
+              <h2>Lighting in Image Capture</h2>
+              <ul>
+                <li>Good lighting is more important than camera quality</li>
+                <li>Light defines contrast, brightness, shadows, reflections, and texture</li>
+                <li>LED lighting dominates due to reliability and low cost</li>
+                <li>
+                  Object interaction with light:
+                  <ul>
+                    <li><strong>R</strong> = Reflected</li>
+                    <li><strong>T</strong> = Transmitted</li>
+                    <li><strong>A</strong> = Absorbed</li>
+                    <li><strong>R + T + A = 100%</strong></li>
+                  </ul>
+                </li>
+                <li>Material and camera angle affect how light behaves</li>
+                <li>Controlled environments prevent unnatural rendering and improve accuracy</li>
+              </ul>
+            </div>
+
+            <figure class="lighting-visual" aria-label="Animated light interaction diagram">
+              <svg class="lighting-svg" viewBox="0 0 620 410" role="img" aria-labelledby="lighting-diagram-title lighting-diagram-desc">
+                <title id="lighting-diagram-title">Animated LED illumination and pipe surface interaction</title>
+                <desc id="lighting-diagram-desc">
+                  An LED beam reaches a metallic pipe surface and splits into reflected, transmitted, and absorbed paths.
+                </desc>
+                <defs>
+                  <linearGradient id="lightingPipeMetal" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#2e3a46" />
+                    <stop offset="28%" stop-color="#9faeb9" />
+                    <stop offset="52%" stop-color="#e6edf1" />
+                    <stop offset="72%" stop-color="#7f919d" />
+                    <stop offset="100%" stop-color="#26333e" />
+                  </linearGradient>
+                  <linearGradient id="lightingAbsorbFade" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#d26a2e" stop-opacity="0.9" />
+                    <stop offset="100%" stop-color="#d26a2e" stop-opacity="0" />
+                  </linearGradient>
+                  <filter id="lightingGlow" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <marker id="lightingArrowWarm" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                    <path d="M0 0L10 5L0 10Z" fill="#d26a2e" />
+                  </marker>
+                  <marker id="lightingArrowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                    <path d="M0 0L10 5L0 10Z" fill="#1f6feb" />
+                  </marker>
+                  <marker id="lightingArrowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+                    <path d="M0 0L10 5L0 10Z" fill="#1c7e44" />
+                  </marker>
+                </defs>
+
+                <g class="lighting-led">
+                  <rect x="58" y="69" width="108" height="62" rx="16" />
+                  <circle cx="143" cy="100" r="20" />
+                  <path d="M51 78h-18M51 100H24M51 122h-18" />
+                  <text x="60" y="56">LED LIGHT SOURCE</text>
+                </g>
+
+                <g class="lighting-camera">
+                  <rect x="418" y="52" width="116" height="74" rx="16" />
+                  <circle cx="443" cy="89" r="20" />
+                  <circle cx="443" cy="89" r="9" />
+                  <rect x="482" y="70" width="34" height="12" rx="5" />
+                  <text x="436" y="43">CAMERA</text>
+                </g>
+
+                <g class="lighting-pipe">
+                  <path d="M198 256C244 202 375 202 422 256L398 309C354 278 267 278 221 309Z" />
+                  <path class="lighting-pipe-highlight" d="M221 264C264 231 356 231 399 264" />
+                  <text x="255" y="342">METALLIC PIPE SURFACE</text>
+                </g>
+
+                <line class="lighting-ray lighting-ray-incoming" x1="160" y1="111" x2="280" y2="238" />
+                <line class="lighting-ray lighting-ray-reflected" x1="280" y1="238" x2="430" y2="119" />
+                <line class="lighting-ray lighting-ray-transmitted" x1="280" y1="238" x2="317" y2="326" />
+                <line class="lighting-ray lighting-ray-absorbed" x1="280" y1="238" x2="382" y2="274" />
+
+                <g class="lighting-pulse lighting-pulse-incoming">
+                  <circle r="8" />
+                </g>
+                <g class="lighting-pulse lighting-pulse-reflected">
+                  <circle r="8" />
+                </g>
+                <g class="lighting-pulse lighting-pulse-transmitted">
+                  <circle r="8" />
+                </g>
+                <g class="lighting-pulse lighting-pulse-absorbed">
+                  <circle r="8" />
+                </g>
+
+                <g class="lighting-label lighting-label-reflected">
+                  <text x="385" y="179">R = REFLECTED</text>
+                </g>
+                <g class="lighting-label lighting-label-transmitted">
+                  <text x="304" y="316">T = TRANSMITTED</text>
+                </g>
+                <g class="lighting-label lighting-label-absorbed">
+                  <text x="346" y="252">A = ABSORBED</text>
+                </g>
+
+                <g class="lighting-equation">
+                  <rect x="176" y="362" width="268" height="35" rx="17" />
+                  <text x="310" y="385">R + T + A = 100%</text>
+                </g>
+              </svg>
+              <figcaption>
+                Controlled illumination makes surface geometry measurable and repeatable.
+              </figcaption>
+              <figure class="lighting-reference">
+                <img
+                  src="machine_vision_lighting.jpg"
+                  alt="Industrial machine vision lighting setups including bright field, dark field, back lighting, diffuse dome, axial diffuse, and flat diffuse illumination"
+                />
+                <figcaption>Industrial lighting setup</figcaption>
+              </figure>
+            </figure>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell optics-slide">
+            <div class="optics-copy">
+              <p class="themed-kicker">Image Formation</p>
+              <h2>Optics for Machine Vision</h2>
+              <ul>
+                <li>Accurate imaging requires proper lighting and a suitable lens</li>
+                <li>A mismatched lens leads to unusable images</li>
+                <li>Lens must fully cover the rectangular camera sensor</li>
+                <li>Undersized lens -> vignetting (dark ring)</li>
+                <li>Oversized lens -> higher cost without benefit</li>
+                <li>
+                  When selecting a lens, consider:
+                  <ul>
+                    <li>Working distance</li>
+                    <li>Camera length</li>
+                    <li>Field of view</li>
+                    <li>Sensor size/model</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="optics-visual">
+              <img
+                class="optics-photo"
+                src="images/camera.jpg"
+                alt="Camera lenses used for machine vision image capture"
+              />
+              <div class="optics-coverage-demo" aria-label="Animated lens coverage comparison">
+                <div class="optics-state optics-state-correct">
+                  <p>Correct coverage</p>
+                  <div class="optics-sensor">
+                    <span class="optics-lens-circle"></span>
+                  </div>
+                </div>
+                <div class="optics-state optics-state-undersized">
+                  <p>Undersized lens</p>
+                  <div class="optics-sensor">
+                    <span class="optics-lens-circle"></span>
+                  </div>
+                  <small>vignetting</small>
+                </div>
+                <div class="optics-state optics-state-oversized">
+                  <p>Oversized lens</p>
+                  <div class="optics-sensor">
+                    <span class="optics-lens-circle"></span>
+                  </div>
+                  <small>extra cost</small>
+                </div>
+              </div>
+              <figcaption>
+                The lens image circle should cover the full sensor without unnecessary oversizing.
+              </figcaption>
+            </figure>
           </div>
         </section>
 
