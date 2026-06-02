@@ -1023,8 +1023,9 @@ body {
   grid-template-columns: minmax(0, 1fr) minmax(190px, 0.8fr) minmax(0, 1fr);
   grid-template-areas:
     "entocentric center telecentric"
-    "entocentric-ray center telecentric-ray";
-  gap: 10px 14px;
+    "entocentric-ray center telecentric-ray"
+    "entocentric-keywords center telecentric-keywords";
+  gap: 8px 14px;
   align-items: stretch;
   padding: 14px;
   border-radius: 28px;
@@ -1078,13 +1079,13 @@ body {
 }
 
 .lens-ring-image {
-  height: 185px;
+  height: 168px;
   border-radius: 12px;
   background: #fff;
 }
 
 .lens-ray-image {
-  height: 76px;
+  height: 64px;
   border-radius: 9px;
   background: #fff;
 }
@@ -1138,6 +1139,51 @@ body {
 
 .lens-ray-visual figcaption {
   margin-top: 4px;
+}
+
+.lens-keywords {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 7px 10px 7px 24px;
+  border-radius: 14px;
+  background: rgba(255, 253, 250, 0.82);
+  border: 1px solid rgba(223, 214, 206, 0.88);
+}
+
+.lens-keywords-entocentric {
+  grid-area: entocentric-keywords;
+}
+
+.lens-keywords-telecentric {
+  grid-area: telecentric-keywords;
+}
+
+.lens-keywords li {
+  color: #5d5651;
+  font-size: 0.83rem;
+  font-weight: 850;
+  line-height: 1.18;
+}
+
+.lens-keywords-entocentric {
+  border-color: rgba(177, 42, 36, 0.18);
+}
+
+.lens-keywords-telecentric {
+  border-color: rgba(31, 111, 235, 0.18);
+}
+
+.lens-keywords-entocentric li::marker {
+  color: var(--accent);
+}
+
+.lens-keywords-telecentric li {
+  color: #314055;
+}
+
+.lens-keywords-telecentric li::marker {
+  color: #1f6feb;
 }
 
 .first-setup-slide {
@@ -5587,9 +5633,11 @@ body.is-image-lightbox-open {
     grid-template-areas:
       "entocentric"
       "entocentric-ray"
+      "entocentric-keywords"
       "center"
       "telecentric"
-      "telecentric-ray";
+      "telecentric-ray"
+      "telecentric-keywords";
   }
 
   .first-setup-slide {
