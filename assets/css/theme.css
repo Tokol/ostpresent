@@ -1521,7 +1521,8 @@ body {
 }
 
 .modelled-setup-benefits article {
-  padding: 12px 12px 10px;
+  min-height: 116px;
+  padding: 15px 13px 12px;
   border-radius: 16px;
   background: rgba(255, 253, 250, 0.78);
   border: 1px solid rgba(223, 214, 206, 0.86);
@@ -1531,7 +1532,7 @@ body {
 .modelled-setup-benefits strong {
   display: block;
   color: var(--accent);
-  font-size: 0.67rem;
+  font-size: 0.71rem;
   font-weight: 950;
   letter-spacing: 0.08em;
   line-height: 1.1;
@@ -1541,7 +1542,7 @@ body {
 .modelled-setup-benefits p {
   margin: 7px 0 0;
   color: #5d5651;
-  font-size: 0.73rem;
+  font-size: 0.78rem;
   font-weight: 760;
   line-height: 1.3;
 }
@@ -1567,7 +1568,7 @@ body {
 .modelled-setup-gallery img {
   display: block;
   width: 100%;
-  height: 246px;
+  height: 286px;
   border-radius: 14px;
   object-fit: contain;
   background: rgba(255, 255, 255, 0.92);
