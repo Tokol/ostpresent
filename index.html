@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
     />
     <link rel="icon" type="image/png" href="novia_uas.png" />
-    <link rel="stylesheet" href="assets/css/theme.css?v=20260601-4" />
+    <link rel="stylesheet" href="assets/css/theme.css?v=20260602-14" />
   </head>
   <body>
     <div class="reveal">
@@ -307,73 +307,249 @@
           </div>
         </section>
 
-        <section class="themed-slide reality-section">
-          <div class="themed-backdrop reality-backdrop" aria-hidden="true"></div>
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
-          <div class="themed-shell circle-slide">
-            <div class="circle-copy">
-              <p class="themed-kicker">Geometric Foundation</p>
-              <h2>Why Circles Matter</h2>
-              <div class="circle-principles">
-                <p>
-                  <strong>Constant radius.</strong>
-                  A circle has a constant radius from its center, enabling
-                  uniform rotation and even stress distribution.
-                </p>
-                <p>
-                  <strong>Maximum area.</strong>
-                  For a given boundary, a circle encloses the maximum area,
-                  making it an efficient and stable design choice.
-                </p>
+          <div class="themed-shell lens-slide">
+            <div class="lens-header">
+              <div>
+                <p class="themed-kicker">Lens Selection</p>
+                <h2>Lens</h2>
               </div>
-            </div>
-            <div class="circle-gallery">
-              <div class="circle-grid" aria-label="Examples of circular forms">
-                <figure>
-                  <img src="images/grid/pizza.jpeg" alt="Pizza" />
-                  <figcaption>Pizza</figcaption>
-                </figure>
-                <figure>
-                  <img src="images/grid/coffe.jpg" alt="Coffee cup" />
-                  <figcaption>Cup</figcaption>
-                </figure>
-                <figure>
-                  <img src="images/grid/manhole.jpeg" alt="Manhole cover" />
-                  <figcaption>Manhole</figcaption>
-                </figure>
-                <figure>
-                  <img src="images/grid/wheel.jpeg" alt="Wheel" />
-                  <figcaption>Wheel</figcaption>
-                </figure>
-                <figure>
-                  <img src="images/grid/industry.jpeg" alt="Industrial circular form" />
-                  <figcaption>Industry</figcaption>
-                </figure>
-                <figure>
-                  <img src="images/grid/pipe.jpg" alt="Pipe cross-section" />
-                  <figcaption>Pipe</figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="circle-scale">
               <p>
-                Circular patterns appear across scales, from microscopic
-                structures to large astronomical systems, though rarely as
-                perfect circles.
+                Lens geometry changes how object dimensions are represented in the captured image.
               </p>
-              <div class="scale-bridge" aria-label="Circular patterns across scales">
-                <figure>
+            </div>
+
+            <div class="lens-comparison">
+              <article class="lens-type-card">
+                <h3>Entocentric</h3>
+                <p>Perspective view</p>
+                <img
+                  class="lens-ring-image"
+                  src="images/lens/Entocentric.png"
+                  alt="Entocentric lens view of a ring-shaped part"
+                />
+              </article>
+
+              <figure class="lens-center-visual">
+                <img
+                  src="images/lens/first_sldie_1.jpg"
+                  alt="Entocentric and telecentric lens setup size comparison"
+                />
+                <figcaption>Lens setup comparison</figcaption>
+              </figure>
+
+              <article class="lens-type-card">
+                <h3>Telecentric</h3>
+                <p>Dimensionally stable view</p>
+                <img
+                  class="lens-ring-image"
+                  src="images/lens/telecentric.jpg"
+                  alt="Telecentric lens view of a ring-shaped part"
+                />
+              </article>
+
+              <figure class="lens-ray-visual lens-ray-visual-entocentric">
+                <img
+                  class="lens-ray-image lens-ray-image-compact"
+                  src="images/lens/diverging rays.jpg"
+                  alt="Diverging rays entering an entocentric lens"
+                />
+                <figcaption>Diverging rays</figcaption>
+              </figure>
+
+              <figure class="lens-ray-visual lens-ray-visual-telecentric">
+                <img
+                  class="lens-ray-image"
+                  src="images/lens/rays.jpg"
+                  alt="Parallel rays entering a telecentric lens"
+                />
+                <figcaption>Parallel rays</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell first-setup-slide">
+            <div class="first-setup-copy">
+              <p class="themed-kicker">Initial Experiment</p>
+              <h2>First Setup</h2>
+              <p class="first-setup-lead">
+                A simple black background improved contrast, but the manual
+                arrangement was not stable enough for repeatable measurement.
+              </p>
+
+              <div class="first-setup-findings">
+                <article>
+                  <strong>Contrast</strong>
+                  <p>Black background hides details outside the pipe rim.</p>
+                </article>
+                <article>
+                  <strong>Working distance</strong>
+                  <p>Camera position was constrained by the available lens.</p>
+                </article>
+                <article>
+                  <strong>Lighting</strong>
+                  <p>Ambient light and shadows changed the captured result.</p>
+                </article>
+                <article>
+                  <strong>Alignment</strong>
+                  <p>Manual pipe centering was difficult to reproduce.</p>
+                </article>
+              </div>
+            </div>
+
+            <figure class="first-setup-visual">
+              <img
+                src="images/lens/second_slide.png"
+                alt="First experimental pipe inspection setup on a black background with surrounding hardware and cables"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell ring-light-slide">
+            <div class="ring-light-copy">
+              <p class="themed-kicker">Lighting Iteration</p>
+              <h2>Setup Using Ring Light</h2>
+              <p class="ring-light-lead">
+                A ring light produced a clearer, more continuous pipe rim and
+                reduced the effect of ambient lighting.
+              </p>
+
+              <div class="ring-light-findings">
+                <article class="ring-light-success">
+                  <strong>Improvement</strong>
+                  <p>More even illumination increased rim visibility.</p>
+                </article>
+                <article class="ring-light-limit">
+                  <strong>Remaining issue</strong>
+                  <p>Angled or discolored regions still created bright reflections.</p>
+                </article>
+              </div>
+
+            </div>
+
+            <div class="ring-light-gallery">
+              <figure class="ring-light-hardware">
+                <img
+                  src="images/lens/ring_light.png"
+                  alt="Ring light illumination hardware used for the pipe inspection setup"
+                />
+                <figcaption>Ring light illumination</figcaption>
+              </figure>
+              <figure class="ring-light-result">
+                <img
+                  src="images/lens/detected_light_issue.png"
+                  alt="Pipe rim image showing localized reflective regions highlighted with red circles"
+                />
+                <figcaption>Localized reflections remain visible on the pipe rim</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell tunnel-setup-slide">
+            <div class="tunnel-setup-copy">
+              <p class="themed-kicker">Lighting Refinement</p>
+              <h2>Setup With Ring Light and Tunnel</h2>
+              <p class="tunnel-setup-lead">
+                A white tunnel around the pipe redirected light toward the rim,
+                improving contrast while reducing unwanted visual detail.
+              </p>
+
+              <div class="tunnel-setup-findings">
+                <article>
+                  <strong>Controlled reflection</strong>
+                  <p>The tunnel reflected light back toward the pipe edge.</p>
+                </article>
+                <article>
+                  <strong>Cleaner image</strong>
+                  <p>The rim became more continuous and easier to isolate.</p>
+                </article>
+                <article>
+                  <strong>Remaining limitation</strong>
+                  <p>Pipe centering was still difficult to reproduce manually.</p>
+                </article>
+              </div>
+            </div>
+
+            <figure class="tunnel-setup-visual">
+              <img
+                src="images/lens/ring_setup.png"
+                alt="Pipe rim captured using a ring light and reflective tunnel setup"
+              />
+              <figcaption>
+                Improved rim visibility with reflected illumination
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell modelled-setup-slide">
+            <div class="modelled-setup-header">
+              <div>
+                <p class="themed-kicker">Controlled Fixture</p>
+                <h2>3D Modelled Setup</h2>
+              </div>
+              <p>
+                The experimental setup was redesigned as a modular enclosure
+                for repeatable image capture.
+              </p>
+            </div>
+
+            <div class="modelled-setup-body">
+              <div class="modelled-setup-benefits">
+                <article>
+                  <strong>Fixed geometry</strong>
+                  <p>Camera position remains stable relative to the pipe.</p>
+                </article>
+                <article>
+                  <strong>Controlled light</strong>
+                  <p>White surfaces reflect light while dark surfaces absorb spill.</p>
+                </article>
+                <article>
+                  <strong>Quick pipe change</strong>
+                  <p>Removable access makes test pipes easier to swap.</p>
+                </article>
+                <article>
+                  <strong>Modular design</strong>
+                  <p>Fixture elements can be refined without rebuilding the setup.</p>
+                </article>
+              </div>
+
+              <div class="modelled-setup-gallery">
+                <figure class="modelled-setup-enclosed">
                   <img
-                    src="images/microscopic observation.png"
-                    alt="Microscopic circular structure"
+                    src="images/lens/3dcontrol_1.png"
+                    alt="CAD rendering of the enclosed modular pipe inspection fixture"
                   />
-                  <figcaption>Microscopic</figcaption>
+                  <figcaption>Enclosed inspection fixture</figcaption>
                 </figure>
-                <span class="scale-line" aria-hidden="true"></span>
-                <figure>
-                  <img src="images/galaxy.jpeg" alt="Galaxy with circular form" />
-                  <figcaption>Astronomical</figcaption>
+                <figure class="modelled-setup-access">
+                  <img
+                    src="images/lens/3dcontrol_2.png"
+                    alt="CAD rendering of the modular pipe inspection fixture with side access open"
+                  />
+                  <figcaption>Removable access for pipe changes</figcaption>
                 </figure>
               </div>
             </div>
@@ -1006,42 +1182,6 @@
           <div class="themed-backdrop" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
-          <div class="themed-shell deviation-slide">
-            <div class="deviation-copy">
-              <p class="themed-kicker">Measurement Pipeline</p>
-              <h2>From Real Shape to Measured Deviation</h2>
-              <ul class="deviation-points">
-                <li>Real pipe is not perfectly circular</li>
-                <li>Shape is converted into radial deviation</li>
-                <li>Deviation varies with angle</li>
-              </ul>
-            </div>
-            <div class="deviation-visuals">
-              <figure class="deviation-visual-card">
-                <p class="deviation-label">Vision Output</p>
-                <img src="images/circle_slide.jpg" alt="Detected pipe rim from vision system" />
-                <figcaption>Detected pipe rim from vision system</figcaption>
-              </figure>
-              <span class="deviation-flow" aria-hidden="true">→</span>
-              <figure class="deviation-visual-card deviation-visual-card-plain">
-                <p class="deviation-label">Deviation Map</p>
-                <img
-                  src="images/bg_newplot.png"
-                  alt="Radial deviation from ideal circle across 360 degrees"
-                />
-                <figcaption>Radial deviation from ideal circle across 360°</figcaption>
-              </figure>
-            </div>
-            <p class="deviation-takeaway">
-              Visually circular does not mean geometrically perfect.
-            </p>
-          </div>
-        </section>
-
-        <section class="themed-slide">
-          <div class="themed-backdrop" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
           <div class="themed-shell circle-fitting-slide">
             <div class="circle-fitting-header">
               <p class="themed-kicker">Circle Fitting on Real Data</p>
@@ -1099,62 +1239,9 @@
           <div class="themed-backdrop" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
-          <div class="themed-shell calibration-slide">
-            <div class="calibration-title">
-              <p class="themed-kicker">Measurement Calibration</p>
-              <h2>Previous method: known diameter scale</h2>
-            </div>
-
-            <div class="calibration-visual">
-              <figure class="calibration-image-card calibration-image-card-main">
-                <img
-                  src="images/slide_10_1.png"
-                  alt="Scale to millimeters calibration interface"
-                />
-              </figure>
-              <figure class="calibration-image-card">
-                <img
-                  src="images/slide10_2.png"
-                  alt="Measured method values after calibration"
-                />
-              </figure>
-              <p class="calibration-caption">
-                Known pipe diameter -> pixel scale
-              </p>
-            </div>
-
-            <div class="calibration-points">
-              <div class="calibration-formula">
-                <p class="calibration-formula-label">Scale Factor</p>
-                <p class="calibration-equation">
-                  mm per pixel =
-                  <span>D<sub>real</sub></span>
-                  <span class="calibration-divider">/</span>
-                  <span>D<sub>pixel</sub></span>
-                </p>
-              </div>
-
-              <div class="calibration-mini-grid">
-                <p><strong>Reference</strong><span>known diameter</span></p>
-                <p><strong>Pixels</strong><span>detected diameter</span></p>
-                <p><strong>Scale</strong><span>mm per px</span></p>
-              </div>
-
-              <p class="calibration-note">
-                This method depends on keeping camera distance, zoom, angle, and pipe
-                face plane unchanged.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="themed-slide">
-          <div class="themed-backdrop" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
           <div class="themed-shell tobias-calibration-slide">
             <div class="tobias-calibration-title">
-              <p class="themed-kicker">New Approach</p>
+              <p class="themed-kicker">3D Modelled Calibration Fixture</p>
               <h2>Tobias calibration fixture</h2>
             </div>
 
@@ -1475,441 +1562,8 @@
           </div>
         </section>
 
-        <section class="themed-slide">
-          <div class="themed-backdrop" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
-          <div class="themed-shell fc-slide">
-            <style>
-              .fc-slide {
-                padding-top: 14px;
-                padding-bottom: 12px;
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-              }
-              .fc-header {
-                display: flex;
-                align-items: baseline;
-                gap: 16px;
-              }
-              .fc-header .themed-kicker {
-                margin: 0;
-                flex: 0 0 auto;
-              }
-              .fc-header h2 {
-                margin: 0;
-                font-size: clamp(1.34rem, 1.65vw, 1.82rem);
-                line-height: 1.06;
-                max-width: none;
-              }
-              .fc-system {
-                position: relative;
-                border-radius: 18px;
-                padding: 18px 18px 16px;
-                background:
-                  linear-gradient(180deg, rgba(255, 253, 250, 0.9), rgba(247, 241, 235, 0.86));
-                border: 1px solid rgba(221, 210, 200, 0.9);
-                box-shadow:
-                  0 12px 26px rgba(48, 37, 29, 0.06),
-                  inset 0 1px 0 rgba(255, 255, 255, 0.8);
-              }
-              .fc-pipeline {
-                display: grid;
-                grid-template-columns: repeat(6, minmax(0, 1fr));
-                gap: 16px;
-                align-items: stretch;
-              }
-              .fc-stage {
-                position: relative;
-                min-height: 84px;
-                padding: 13px 10px 12px;
-                border-radius: 8px;
-                background: rgba(255, 255, 255, 0.78);
-                border: 1px solid rgba(214, 204, 194, 0.95);
-                box-shadow: 0 6px 16px rgba(50, 39, 31, 0.045);
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 5px;
-              }
-              .fc-stage::after {
-                content: "";
-                position: absolute;
-                right: -13px;
-                top: 50%;
-                width: 10px;
-                height: 10px;
-                border-top: 2px solid rgba(177, 42, 36, 0.42);
-                border-right: 2px solid rgba(177, 42, 36, 0.42);
-                transform: translateY(-50%) rotate(45deg);
-              }
-              .fc-stage:last-child::after {
-                display: none;
-              }
-              .fc-stage-num {
-                width: 22px;
-                height: 22px;
-                margin: 0 auto 1px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(177, 42, 36, 0.1);
-                color: var(--accent);
-                font-size: 0.58rem;
-                font-weight: 950;
-              }
-              .fc-stage strong {
-                color: #2f3340;
-                font-size: 0.66rem;
-                line-height: 1.08;
-              }
-              .fc-stage span:last-child {
-                color: #6b6560;
-                font-size: 0.5rem;
-                line-height: 1.18;
-              }
-              .fc-stage.input { border-color: rgba(31, 111, 235, 0.22); background: #f5f8ff; }
-              .fc-stage.find { border-color: rgba(217, 119, 6, 0.24); background: #fff9ef; }
-              .fc-stage.measure { border-color: rgba(28, 126, 68, 0.24); background: #f3fbf6; }
-              .fc-split {
-                width: min(560px, 70%);
-                height: 34px;
-                margin: 0 auto;
-                position: relative;
-              }
-              .fc-split::before {
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: 0;
-                width: 2px;
-                height: 18px;
-                background: rgba(177, 42, 36, 0.3);
-              }
-              .fc-split::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 17px;
-                height: 2px;
-                background: rgba(177, 42, 36, 0.3);
-              }
-              .fc-analysis {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 18px;
-                align-items: stretch;
-              }
-              .fc-metric {
-                position: relative;
-                padding: 14px 16px;
-                border-radius: 10px;
-                background: rgba(255, 253, 250, 0.9);
-                border: 1px solid rgba(214, 204, 194, 0.92);
-                box-shadow: 0 8px 18px rgba(48, 37, 29, 0.04);
-              }
-              .fc-metric::before {
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: -18px;
-                width: 2px;
-                height: 18px;
-                background: rgba(177, 42, 36, 0.3);
-              }
-              .fc-metric h3 {
-                margin: 0 0 9px;
-                color: #2f3340;
-                font-size: 0.82rem;
-                line-height: 1.12;
-                letter-spacing: 0;
-              }
-              .fc-methods {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-              }
-              .fc-method {
-                min-height: 72px;
-                padding: 10px 10px 9px;
-                border-radius: 8px;
-                background: rgba(250, 247, 244, 0.9);
-                border: 1px solid rgba(221, 211, 202, 0.82);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-              }
-              .fc-method.primary {
-                background: #f2fbf6;
-                border-color: rgba(28, 126, 68, 0.25);
-              }
-              .fc-method-code {
-                color: var(--accent);
-                font-size: 0.8rem;
-                font-weight: 950;
-                line-height: 1;
-              }
-              .fc-method.primary .fc-method-code {
-                color: #1c7e44;
-              }
-              .fc-method p {
-                margin: 5px 0 0;
-                color: #625c57;
-                font-size: 0.52rem;
-                line-height: 1.18;
-              }
-              .fc-join {
-                width: min(520px, 64%);
-                height: 26px;
-                margin: 0 auto;
-                position: relative;
-              }
-              .fc-join::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                height: 2px;
-                background: rgba(177, 42, 36, 0.3);
-              }
-              .fc-join::after {
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: 0;
-                width: 2px;
-                height: 26px;
-                background: rgba(177, 42, 36, 0.3);
-              }
-              .fc-validation {
-                display: grid;
-                grid-template-columns: 1.2fr auto 0.8fr;
-                gap: 14px;
-                align-items: stretch;
-              }
-              .fc-validation-arrow {
-                width: 22px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: rgba(177, 42, 36, 0.48);
-                font-size: 0.92rem;
-                font-weight: 900;
-              }
-              .fc-check,
-              .fc-result {
-                border-radius: 10px;
-                border: 1px solid rgba(177, 42, 36, 0.18);
-                background: rgba(255, 249, 245, 0.92);
-                padding: 14px 16px;
-                display: flex;
-                align-items: center;
-                gap: 14px;
-              }
-              .fc-check h3,
-              .fc-result h3 {
-                margin: 0 0 4px;
-                color: #2f3340;
-                font-size: 0.78rem;
-                letter-spacing: 0;
-                line-height: 1.1;
-              }
-              .fc-check p {
-                margin: 0;
-                color: #6b6560;
-                font-size: 0.54rem;
-                line-height: 1.22;
-              }
-              .fc-badge {
-                flex: 0 0 auto;
-                min-width: 44px;
-                height: 30px;
-                border-radius: 999px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 0.56rem;
-                font-weight: 950;
-                letter-spacing: 0.06em;
-              }
-              .fc-badge.standard {
-                color: var(--accent);
-                background: rgba(177, 42, 36, 0.11);
-              }
-              .fc-result {
-                justify-content: space-between;
-                background: linear-gradient(90deg, rgba(242, 251, 246, 0.96), rgba(255, 244, 241, 0.9));
-              }
-              .fc-passfail {
-                display: flex;
-                gap: 8px;
-              }
-              .fc-badge.pass { color: #1c7e44; background: rgba(28, 126, 68, 0.14); }
-              .fc-badge.fail { color: var(--accent); background: rgba(177, 42, 36, 0.13); }
-            </style>
-
-            <div class="fc-header">
-              <p class="themed-kicker">Processing Pipeline</p>
-              <h2>From Image Upload to Standards Validation</h2>
-
-            </div>
-
-            <div class="fc-system" aria-label="Processing pipeline flow chart">
-              <div class="fc-pipeline">
-                <div class="fc-stage input">
-                  <span class="fc-stage-num">1</span>
-                  <strong>Upload</strong>
-                  <span>Image input</span>
-                </div>
-                <div class="fc-stage">
-                  <span class="fc-stage-num">2</span>
-                  <strong>Prepare</strong>
-                  <span>Clean edges</span>
-                </div>
-                <div class="fc-stage find">
-                  <span class="fc-stage-num">3</span>
-                  <strong>Locate Pipe</strong>
-                  <span>ROI + contour</span>
-                </div>
-                <div class="fc-stage">
-                  <span class="fc-stage-num">4</span>
-                  <strong>Fit Circle</strong>
-                  <span>Reference center</span>
-                </div>
-                <div class="fc-stage measure">
-                  <span class="fc-stage-num">5</span>
-                  <strong>Calibrate</strong>
-                  <span>Pixels to mm</span>
-                </div>
-                <div class="fc-stage">
-                  <span class="fc-stage-num">6</span>
-                  <strong>Measure</strong>
-                  <span>Inner / outer wall</span>
-                </div>
-              </div>
-
-              <div class="fc-split" aria-hidden="true"></div>
-
-              <div class="fc-analysis">
-                <div class="fc-metric">
-                  <h3>Diameter Output</h3>
-                  <div class="fc-methods">
-                    <div class="fc-method primary">
-                      <span class="fc-method-code">LSC</span>
-                      <p>Best-fit diameter</p>
-                    </div>
-                    <div class="fc-method">
-                      <span class="fc-method-code">MCC / MIC</span>
-                      <p>Envelope reference</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="fc-metric">
-                  <h3>Roundness Output</h3>
-                  <div class="fc-methods">
-                    <div class="fc-method primary">
-                      <span class="fc-method-code">D<sub>max</sub> - D<sub>min</sub></span>
-                      <p>OSTP ovality range</p>
-                    </div>
-                    <div class="fc-method">
-                      <span class="fc-method-code">MZC</span>
-                      <p>ISO 12181 comparison</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="fc-join" aria-hidden="true"></div>
-
-              <div class="fc-validation">
-                <div class="fc-check">
-                  <span class="fc-badge standard">7</span>
-                  <div>
-                    <h3>OSTP Standards Check</h3>
-                    <p>Nominal diameter, tolerance class, and measured values are evaluated together.</p>
-                  </div>
-                </div>
-                <div class="fc-validation-arrow" aria-hidden="true">→</div>
-                <div class="fc-result">
-                  <h3>Validation Result</h3>
-                  <div class="fc-passfail">
-                    <span class="fc-badge pass">PASS</span>
-                    <span class="fc-badge fail">FAIL</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
 
         
-
-        <section class="themed-slide">
-          <div class="themed-backdrop" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
-          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
-          <div class="themed-shell standards-intro-slide">
-            <div class="standards-intro-title">
-              <p class="themed-kicker">Engineering Validation</p>
-              <div class="standards-title-row">
-                <h2>From Measurement to Validation: Integrating OSTP Standards</h2>
-                <img src="ostp_logo.png" alt="OSTP logo" />
-              </div>
-            </div>
-
-            <div class="standards-output">
-              <p class="standards-panel-label">Computed Measurement Output</p>
-              <div class="standards-metric-list">
-                <span>Diameter (mm)</span>
-                 <span>LSC (mm)</span>
-                <span>MZC roundness error</span>
-                <span>MCC outer diameter</span>
-                <span>MIC inner clearance</span>
-              </div>
-              <p class="standards-panel-note">
-                Accurate geometry, but not yet pass/fail.
-              </p>
-            </div>
-
-            <div class="standards-flow" aria-label="Validation flow">
-              <div class="standards-flow-step">Circle fitting</div>
-              <div class="standards-flow-step">Pixel measurement</div>
-              <div class="standards-flow-step">Calibration to mm</div>
-              <div class="standards-flow-step">Computed values</div>
-              <div class="standards-flow-step standards-flow-final">
-                OSTP standard check
-              </div>
-            </div>
-
-            <div class="standards-input">
-              <p class="standards-panel-label">OSTP Standards Integration</p>
-              <div class="standards-source-card">
-                <span>Source</span>
-                <strong>Excel-based engineering sheets</strong>
-              </div>
-              <div class="standards-rule-list">
-                <span>Formula rules</span>
-                <span>Lookup tables</span>
-                <span>Conditional ranges</span>
-                <span>Revision-aware data</span>
-              </div>
-              <p class="standards-panel-note">
-                Standards define the allowed limits.
-              </p>
-            </div>
-
-            <p class="standards-intro-takeaway">
-              Measurement extracts values, afterward OSTP standards decide acceptability.
-            </p>
-          </div>
-        </section>
 
         <section class="themed-slide">
           <div class="themed-backdrop" aria-hidden="true"></div>
@@ -2454,53 +2108,102 @@
           <div class="themed-backdrop" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
-          <div class="themed-shell conclusion-slide">
-            <div class="conclusion-title">
+          <div class="themed-shell camera-requirements-slide">
+            <div class="camera-requirements-copy">
+              <p class="themed-kicker">Camera Setup Conclusion</p>
+              <h2>Camera Setup Requirements</h2>
+              <p class="camera-requirements-lead">
+                Calibration remains reliable only when the imaging geometry
+                and illumination conditions stay consistent.
+              </p>
+
+              <div class="camera-requirements-grid">
+                <article>
+                  <strong>Stable distance</strong>
+                  <p>Keep camera-to-pipe distance fixed to preserve calibration.</p>
+                </article>
+                <article>
+                  <strong>Reduced distortion</strong>
+                  <p>Use sufficient working distance to limit perspective changes.</p>
+                </article>
+                <article>
+                  <strong>Centered pipe</strong>
+                  <p>Align the pipe face with the camera axis for consistent capture.</p>
+                </article>
+                <article>
+                  <strong>Controlled lighting</strong>
+                  <p>Keep illumination constant across calibration and measurement.</p>
+                </article>
+              </div>
+            </div>
+
+            <figure class="camera-requirements-visual">
+              <img
+                src="images/tobias_calibrate2.png"
+                alt="Camera mounted in a fixed position on the 3D modelled calibration fixture"
+              />
+              <figcaption>Fixed camera geometry supports repeatable calibration</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="themed-slide">
+          <div class="themed-backdrop" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+          <div class="themed-shell integrated-summary-slide">
+            <div class="integrated-summary-title">
               <div>
                 <p class="themed-kicker">Final Summary</p>
-                <h2>Conclusion and Contribution Summary</h2>
+                <h2>From Experimental Setup to Repeatable Pipe Inspection</h2>
               </div>
+              <p>
+                Controlled capture and calibration turn measured circles into
+                engineering results that can be checked against OSTP standards.
+              </p>
             </div>
 
-            <div class="conclusion-body">
-              <figure class="conclusion-visual">
-                <img src="images/pipe_output.jpg" alt="Image-based pipe roundness measurement output" />
-                <figcaption>Image-based pipe measurement</figcaption>
-              </figure>
-
-              <div class="conclusion-flow" aria-label="End-to-end inspection contribution flow">
-                <article>
+            <div class="integrated-summary-grid">
+              <article>
+                <img
+                  src="images/lens/ring_setup.png"
+                  alt="Pipe rim captured using reflected ring-light illumination"
+                />
+                <div>
                   <span>01</span>
-                  <h3>Image Measurement</h3>
-                  <p>Contour extraction with calibrated pixel-to-mm measurement.</p>
-                  <img src="images/slide9/inner_outer_px.jpg" alt="Inner and outer pixel measurement" />
-                </article>
+                  <h3>Controlled Camera Setup</h3>
+                  <p>Stable geometry, centered pipes, and controlled lighting make image capture repeatable.</p>
+                </div>
+              </article>
 
-                <article>
+              <article>
+                <img
+                  src="images/checker_calibrate.png"
+                  alt="Checkerboard calibration target with detected points"
+                />
+                <div>
                   <span>02</span>
-                  <h3>Geometry Evaluation</h3>
-                  <p>LSC, MCC, MIC, and MZC roundness evaluation.</p>
-                  <img src="images/bg_newplot.png" alt="Roundness geometry plot" />
-                </article>
+                  <h3>Calibrated Circle Measurement</h3>
+                  <p>The 3D modelled fixture and calibration convert detected circles into comparable millimeter values.</p>
+                </div>
+              </article>
 
-                <article>
+              <article>
+                <img
+                  src="images/result_pass.png"
+                  alt="OSTP standards validation result showing a passing measurement"
+                />
+                <div>
                   <span>03</span>
-                  <h3>OSTP Validation</h3>
-                  <p>Standard-based tolerance checks and pass/fail decisions.</p>
-                  <img class="conclusion-card-logo" src="ostp_logo.png" alt="OSTP logo" />
-                </article>
-
-                <article>
-                  <span>04</span>
-                  <h3>Future Work</h3>
-                  <p>Mobile measurement, 3D inspection, and batch lookup for industrial deployment.</p>
-                  <img src="images/future1.png" alt="Future mobile measurement workflow" />
-                </article>
-              </div>
+                  <h3>OSTP Standards Validation</h3>
+                  <p>Measured circle values are checked against OSTP limits to produce a clear inspection result.</p>
+                </div>
+              </article>
             </div>
 
-            <p class="conclusion-takeaway">
-              An end-to-end system that transforms image-based measurements into standardized, interpretable, and scalable inspection results.
+            <p class="integrated-summary-takeaway">
+              Camera setup, calibration, circle measurement, and OSTP
+              validation work together as one inspection system.
             </p>
           </div>
         </section>
