@@ -9,7 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
     />
     <link rel="icon" type="image/png" href="novia_uas.png" />
-    <link rel="stylesheet" href="assets/css/theme.css?v=20260602-19" />
+    <link rel="stylesheet" href="assets/css/theme.css?v=20260604-01" />
   </head>
   <body>
     <div class="reveal">
@@ -2493,7 +2493,7 @@
         };
 
         const animate = (time) => {
-          if (document.body.classList.contains("is-deck-fullscreen") && activePoint === null) {
+          if (activePoint === null) {
             const step = Math.min(32, time - lastTime || 16) / 1000;
 
             points.forEach((point) => {
@@ -3184,9 +3184,7 @@
         };
 
         const animateCompute = (time) => {
-          if (document.body.classList.contains("is-deck-fullscreen")) {
-            renderComputeStep(time);
-          }
+          renderComputeStep(time);
 
           requestAnimationFrame(animateCompute);
         };
@@ -3285,9 +3283,7 @@
         };
 
         const animateMccCompute = (time) => {
-          if (document.body.classList.contains("is-deck-fullscreen")) {
-            renderMccComputeStep(time);
-          }
+          renderMccComputeStep(time);
 
           requestAnimationFrame(animateMccCompute);
         };
@@ -3386,9 +3382,7 @@
         };
 
         const animateMicCompute = (time) => {
-          if (document.body.classList.contains("is-deck-fullscreen")) {
-            renderMicComputeStep(time);
-          }
+          renderMicComputeStep(time);
 
           requestAnimationFrame(animateMicCompute);
         };
@@ -3529,9 +3523,7 @@
         };
 
         const animateMzcCompute = (time) => {
-          if (document.body.classList.contains("is-deck-fullscreen")) {
-            renderMzcCompute(time);
-          }
+          renderMzcCompute(time);
 
           requestAnimationFrame(animateMzcCompute);
         };
